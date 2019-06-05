@@ -568,7 +568,8 @@ ul.tabs-nav .tab-nav.active {
     width: 156px;
     height: 156px;
     margin: 0 auto;
-}
+    }
+
 
 .circular-progress-bar .circle strong {
     position: absolute;
@@ -1151,7 +1152,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-page .page-header {
-    background: url(images/about-bg.jpg) no-repeat center;
+    background:url(images/_MG_1569.jpg);
 }
 
 .about-page .welcome-wrap {
@@ -1170,7 +1171,9 @@ ul.tabs-nav .tab-nav.active {
 
 .about-page .welcome-content .entry-content {
     color: #929191;
+    
 }
+
 
 .about-page .welcome-wrap img {
     display: block;
@@ -1179,8 +1182,12 @@ ul.tabs-nav .tab-nav.active {
 
 .about-stats {
     padding: 96px 0;
-    background: #262626;
-}
+    background-color:#6c206e;
+    clear: both;
+    
+    
+    
+}    
 
 .about-stats .circular-progress-bar .circle strong,
 .about-stats .circular-progress-bar .entry-title {
@@ -1257,7 +1264,7 @@ ul.tabs-nav .tab-nav.active {
 
 .help-us {
     padding: 70px 0 96px;
-    background: #ff3700;
+    background: #6c206e;
 }
 
 .help-us h2 {
@@ -2124,3 +2131,32 @@ ul.tabs-nav .tab-nav.active {
     background: #131212;
     text-align: center;
 }
+.Acon-2018 {
+    margin: auto;
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+        text-align: center;    
+}
+
+
+
+.estatisticas {
+    color: white;
+    
+    margin: 0 auto;
+    
+    text-align: center;
+            
+                
+    }
+
+
+
+.pessoas {
+    
+}
+
+

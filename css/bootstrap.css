@@ -638,6 +638,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+    
 }
 
 @media (min-width: 576px) {
@@ -648,20 +649,21 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
-  }
+    max-width: 720px;   
+    }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
-  }
+  
+    }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
-  }
+    }
 }
 
 .container-fluid {
@@ -678,7 +680,7 @@ pre code {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px;
+  margin-left: -15px;   
 }
 
 .no-gutters {
@@ -703,6 +705,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+
 }
 
 .col {
@@ -792,6 +795,7 @@ pre code {
   -ms-flex: 0 0 100%;
       flex: 0 0 100%;
   max-width: 100%;
+  
 }
 
 .order-first {
@@ -3844,8 +3848,8 @@ tbody.collapse.show {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
-    padding-left: 0;
-  }
+    padding-left: 0;  
+    }
 }
 
 @media (min-width: 1200px) {
@@ -8373,4 +8377,6 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important;
 }
+
+
 /*# sourceMappingURL=bootstrap.css.map */
