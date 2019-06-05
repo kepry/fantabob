@@ -7,22 +7,34 @@ require_once "conexão.php";
                 $email = addslashes($_POST['email']);
                 $senha = md5(addslashes($_POST['senha']));
                 $nome  = addslashes($_POST['nome']);
-}    
+    }    
     
 
     try {
         $db = new PDO($dsn, $dbuser, $dbpass);
-        $query = "INSERT INTO usuarios (nome, email, senha)  VALUES('$nome','$email','$senha')";
-        $sql = $db->query($query);
-        if(isset($_SESSION['id']) && empty($_SESSION['id']) == false) {
-            
-            header("Location: index.php");
+        $db = $db->query(" SELECT * FROM usuarios WHERE email = '$email'  ");
+        //nesse trecho ele verifica se existe email no banco
+       
         
-   }     
-}      catch (Exception $e) {
-        echo 'Erro'.$e.getMessage();
+        if($db->rowCount() == 0 || $db->rowCount() == null){
+            $db = new PDO($dsn, $dbuser, $dbpass);
+            $db = $db->query("INSERT INTO usuarios(email,senha,nome) VALUES ('$email', '$senha', '$nome')");
+                
+                header("Location: ../login.html");
+        //utilizando esse método ele checa o numero de respostas dada pelo sql  se não existe igual faça
 
-    
-}
+        }
+        
+         else{
+            
+            echo "Parametro Existente";
+        }
+          
+
+     } 
+      
+    catch (Exception $e) {
+        echo 'Erro'.$e.getMessage();
+    }
 
     ?>
