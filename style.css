@@ -781,7 +781,7 @@ ul.tabs-nav .tab-nav.active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #6c206e;
 }
 
 .welcome-content .entry-content {
@@ -1148,11 +1148,11 @@ ul.tabs-nav .tab-nav.active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: yellow;
+    background: #6c206e;
 }
 
 .about-page .page-header {
-    background:url(images/_MG_1569.jpg);
+    background:url(images/01.JPG);
 }
 
 .about-page .welcome-wrap {
@@ -1219,7 +1219,7 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 500;
     font-style: italic;
     line-height: 1;
-    color: #ff5a00;
+    color: #6c206e;
 }
 
 .testimonial-cont .entry-content {
@@ -1242,7 +1242,7 @@ ul.tabs-nav .tab-nav.active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #6c206e;
 }
 
 .testimonial-cont .entry-footer img {
@@ -1273,6 +1273,7 @@ ul.tabs-nav .tab-nav.active {
     font-weight: 600;
     color: #fff;
 }
+
 
 .help-us .btn {
     margin-top: 36px;
@@ -2158,5 +2159,9 @@ ul.tabs-nav .tab-nav.active {
 .pessoas {
     
 }
+
+
+
+
 
 
