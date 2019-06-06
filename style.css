@@ -420,12 +420,12 @@ a:hover, a:active {
 ----------------------------------*/
 .btn {
     padding: 18px 40px;
-    border: 2px solid #262626;
+    border: 2px solid #6c206e;
     border-radius: 24px;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
-    color: #262626;
+    color: #6c206e;
     outline: none;
 }
 
@@ -434,12 +434,12 @@ a:hover, a:active {
 }
 
 .btn.orange-border {
-    border-color: #FE2E2E;
+    border-color: #6c206e;
 }
 
 .btn.orange-border:hover,
 .btn.gradient-bg {
-    border-color: #FE2E2E;
+    border-color: #6c206e;
     
 }
 
@@ -1152,7 +1152,8 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-page .page-header {
-    background:url(images/01.JPG);
+    background:url(images/heard.png.jfif)no-repeat center;
+
 }
 
 .about-page .welcome-wrap {
@@ -1879,7 +1880,7 @@ ul.tabs-nav .tab-nav.active {
 # Contact Page
 --------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url(images/contact-bg.jpg) no-repeat center;
+    background: url(images/heard.png.jfif)no-repeat center;
 }
 
 .contact-page-wrap {
@@ -1933,14 +1934,14 @@ ul.tabs-nav .tab-nav.active {
     width: 28px;
     margin-right: 10px;
     font-size: 18px;
-    color: #ff5a00;
+    color:#6c206e ;
     text-align: center;
 }
 
 .contact-form {
     padding: 35px 20px 55px;
     margin-top: 96px;
-    background: #edf3f5;
+    background: #6c206e;
 }
 
 .contact-form input[type="text"],
@@ -2001,7 +2002,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 96px 0 90px;
     font-weight: 500;
     color: #929191;
-    background: url("images/foot-bg.jpg") no-repeat center;
+    background: url(images/footer.png.jfif) no-repeat center;
     background-size: cover;
     z-index: 99;
 }
@@ -2054,7 +2055,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .foot-about ul li a {
-    color: #fff;
+    color: #6c206e;
 }
 
 .foot-latest-news ul li {
@@ -2068,7 +2069,7 @@ ul.tabs-nav .tab-nav.active {
 
 .foot-latest-news ul li .posted-date {
     font-size: 12px;
-    color: #ff5a00;
+    color: #6c206e;
 }
 
 .foot-contact ul li {
@@ -2082,7 +2083,7 @@ ul.tabs-nav .tab-nav.active {
     margin-right: 10px;
     font-size: 18px;
     text-align: center;
-    color: #ff5a00;
+    color: #6c206e;
 }
 
 .foot-contact ul li span {

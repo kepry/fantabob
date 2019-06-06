@@ -118,27 +118,44 @@
                             <hr>
                             <form method="POST" action="htdoc/cadastro.php"?" >
                                 <div class="form-group">
+                                    Nome Completo:<br>
                                     <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required>
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
+                                    Nome Social:<br>
                                     <input name="nome_social" class="form-control" placeholder="Nome Social" type="text">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
+                                    E-mail:<br>
                                     <input name="email" class="form-control" placeholder="Email para fazer a Inscrição" type="email" required autofocus>
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
+                                    Senha:<br>
                                     <input name="senha" class="form-control" placeholder="********" type="password" required minlength="8">
                                 </div> <!-- form-group// -->    
                                 <div class="form-group">
-                                    <input name="escolaridade" class="form-control" placeholder="Escolaridade" type="text">
+                                    Escolaridade:<br>
+                                    <select name="escolaridade" id="escolaridade">
+                                        <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                                        <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                        <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                                        <option value="Ensino Medio">Ensino Medio</option>
+                                        <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+                                        <option value="Ensino Técnico">Ensino Técnico</option>
+                                        <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                                        <option value="Ensino Superior">Ensino Superior</option>
+                                    </select>
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
+                                    Data de Nacimento:<br>
                                     <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
+                                    Endereço:<br>
                                     <input name="endereco" class="form-control" placeholder="Endereço" type="text" required >
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
+                                    Telefone:<br>
                                     <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required >
                                 </div> <!-- form-group// -->
                             
@@ -149,10 +166,7 @@
                                             <button type="submit" class="btn btn-primary btn-block"> Inscrever </button>
                                             <button type="reset" class="btn btn-primary btn-block"> Limpar </button>
                                         </div> <!-- form-group// -->
-                                    </div>
-                                    <div class="col-md-6 text-right">
-                                        <a class="small" href="#">Forgot password?</a>
-                                    </div>                                            
+                                    </div>                                          
                                 </div> <!-- .row// -->                                                                  
                         </form>
                         </article>
