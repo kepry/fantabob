@@ -1944,7 +1944,7 @@ ul.tabs-nav .tab-nav.active {
 .contact-form {
     padding: 35px 20px 55px;
     margin-top: 96px;
-    background: #6c206e;
+    background-image: url(images/heard.png.jfif);
 }
 
 .contact-form input[type="text"],
