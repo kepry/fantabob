@@ -4077,7 +4077,7 @@ tbody.collapse.show {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
   padding: 1.25rem;
-}
+  }
 
 .card-title {
   margin-bottom: 0.75rem;
@@ -4199,6 +4199,7 @@ tbody.collapse.show {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+
 }
 
 .card-group .card {
@@ -4260,8 +4261,9 @@ tbody.collapse.show {
 }
 
 .card-columns .card {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;   
 }
+
 
 @media (min-width: 576px) {
   .card-columns {
@@ -4716,6 +4718,7 @@ tbody.collapse.show {
   -ms-flex-align: start;
       align-items: flex-start;
 }
+
 
 .media-body {
   -ms-flex: 1;
@@ -5456,10 +5459,11 @@ button.close {
   position: relative;
 }
 
+
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow hidden;
 }
 
 .carousel-item {

@@ -1197,7 +1197,10 @@ ul.tabs-nav .tab-nav.active {
 
 .about-testimonial {
     padding: 0 0 96px;
+        margin-top: 5%;
 }
+
+
 
 .testimonial-cont {
     margin-top: 96px;
@@ -2166,3 +2169,8 @@ ul.tabs-nav .tab-nav.active {
 
 
 
+
+#carouselExampleIndicators {
+    margin-top: 45%;
+    width: 110%    
+}
