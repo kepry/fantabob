@@ -1,7 +1,17 @@
+
 <?php 
-$dsn = "mysql:dbname=Acon-Banco;host=localhost";
-$dbuser  = "JaromAdmin";
-$dbpass = "toor@toor";
+	
+	private $dsn;
+
+	class conexao{
+
+		functon public __construct(){
+
+			$dsn = new PDO("mysql:dbname=acon;host=localhost";"JaromAdmin";"toor@toor");
+
+		}
+
+	}
 
 
 ?>
