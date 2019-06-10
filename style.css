@@ -749,7 +749,7 @@ ul.tabs-nav .tab-nav.active {
 .home-page-welcome {
     position: relative;
     padding: 96px 0;
-    background: url("images/welcome-bg.jpg") no-repeat center;
+    background: url(images/heard.png.jfif) no-repeat center;
     background-size: cover;
     z-index: 99;
 }
@@ -1197,7 +1197,10 @@ ul.tabs-nav .tab-nav.active {
 
 .about-testimonial {
     padding: 0 0 96px;
+        margin-top: 5%;
 }
+
+
 
 .testimonial-cont {
     margin-top: 96px;
@@ -1290,7 +1293,7 @@ ul.tabs-nav .tab-nav.active {
 # Causes
 --------------------------------------------------------------*/
 .causes-page .page-header {
-    background: url(images/causes-bg.jpg) no-repeat center;
+    background: url(images/estrela.jpg) no-repeat center;
 }
 
 .causes-page .featured-cause {
@@ -1369,7 +1372,7 @@ ul.tabs-nav .tab-nav.active {
 # Single Cause
 --------------------------------------------------------------*/
 .single-cause .page-header {
-    background: url(images/single-cause-bg.jpg) no-repeat center;
+    background: url(images/estrela.jpg) no-repeat center;
 }
 
 .single-cause .highlighted-cause {
@@ -1526,7 +1529,7 @@ ul.tabs-nav .tab-nav.active {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .page-header {
-    background: url(images/portfolio-bg.jpg) no-repeat center;
+    background: url(images/estrela.jpg) no-repeat center;
 }
 
 .portfolio-wrap {
@@ -1579,7 +1582,7 @@ ul.tabs-nav .tab-nav.active {
 # News
 --------------------------------------------------------------*/
 .news-page .page-header {
-    background: url(images/news-bg.jpg) no-repeat center;
+    background: url(images/estrela.jpg) no-repeat center;
 }
 
 .news-wrap {
@@ -1941,7 +1944,7 @@ ul.tabs-nav .tab-nav.active {
 .contact-form {
     padding: 35px 20px 55px;
     margin-top: 96px;
-    background: #6c206e;
+    background-image: url(images/heard.png.jfif);
 }
 
 .contact-form input[type="text"],
@@ -2166,3 +2169,8 @@ ul.tabs-nav .tab-nav.active {
 
 
 
+
+#carouselExampleIndicators {
+    margin-top: 45%;
+    width: 110%    
+}

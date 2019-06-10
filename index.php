@@ -42,28 +42,20 @@
                     </div><!-- .col -->
 
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                       <?php
-                       session_start();
-                        if(isset($_SESSION['id']) && empty($_SESSION['id']) == false) {
-                                echo '<div class="donate-btn">
-                                <a href="htdoc/logoff.php">Logout</a>
-                                </div>';
-
-
-                        } else {
+                        <?php
+                           session_start();
+                            if(isset($_SESSION['id']) && empty($_SESSION['id']) == false) {
+                                    echo '<div class="donate-btn">
+                                    <a href="htdoc/logoff.php">Logout</a>
+                                    </div>';
+                        } 
+                        else {
                             echo '<div class="donate-btn">
                             <a href="login.html">Login</a>
-                            </div>';
-                            
-                        }
-                       
-
-                         
+                            <a href="inscricao.html">Inscrição</a>
+                        </div><!-- .login-btn -->';   
+                        }                   
                        ?>
-
-
-                        
-                        
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -299,11 +291,11 @@
                         </figure>
 
                         <header class="entry-header">
-                            <a href="torneios.html" class="entry-title">Torneios</h3>
+                            <a href="torneios.html" class="entry-title"><h3>Torneios</h3></a>
                         </header>
 
                         <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+                            <p>Vem participar e ficar por dentro</p>
                         </div>
                     </div>
                 </div>
@@ -317,11 +309,11 @@
                         </figure>
 
                         <header class="entry-header">
-                            <a href="atrações.html" class="entry-title">Atrações</h3>
+                            <a href="atrações.html" class="entry-title"><h3>Atrações</h3></a>
                         </header>
     
                         <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+                            <p>Várias atrações para adultos e crianças. Valores acessíveis.</p>
                         </div>
                     </div>
                 </div>
@@ -335,11 +327,11 @@
                         </figure>
 
                         <header class="entry-header">
-                            <a href="ingressos.html" class="entry-title">Ingressos</h3>
+                            <a href="ingressos.html" class="entry-title"><h3>Ingressos</h3></a>
                         </header>
     
                         <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. </p>
+                            <p>vem conhecer o Evento acon.</p>
                         </div>
                     </div>
                 </div>
@@ -353,21 +345,27 @@
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <div class="welcome-content">
                         <header class="entry-header">
-                            <h2 class="entry-title">Wellcome to our Charity</h2>
+                            <h2 class="entry-title">Seja Bem Vindo a ACON</h2>
                         </header><!-- .entry-header -->
 
                         <div class="entry-content mt-5">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.</p>
+                            <p>A ACON – Amostra Cultural Otaku e Nerd é um evento de Cultura Pop e Geek, idealizado em 2017 por um aluno de Ciência da Computação do Instituto Federal – Campus Maracanaú, fã de animação, games, quadrinhos e tecnologia.
+
+                                Um evento realizado de Fãs para Fãs, com o objetivo de criar um espaço inovador que pretende divertir e socializar pessoas com os mesmos gostos e desejos.
+
+                                O evento promoverá shows culturais, palestras, minicursos e oficinas voltadas ao mundo geek, e visando uma nova experiência com uma abordagem técnica, educacional e inovadora dos participantes. Serão apresentados Workshops por profissionais que possibilitarão a interação com outros amantes dos temas em questão.
+
+                                ACON, um evento temático que aborda a cultura Pop oriental e ocidental, voltado para animes, desenhos animados, jogos, filmes, séries e mangás.</p>
                         </div><!-- .entry-content -->
 
                         <div class="entry-footer mt-5">
-                            <a href="#" class="btn gradient-bg mr-2">Read More</a>
+                            <a href="about.html" class="btn gradient-bg mr-2">Saiba mais sobre a ACON</a>
                         </div><!-- .entry-footer -->
                     </div><!-- .welcome-content -->
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
-                    <img src="images/welcome.jpg" alt="welcome">
+                    <img src="images/index1.jpg" height="400" alt="INCIO">
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
@@ -384,12 +382,12 @@
 
                         <div class="event-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <img src="images/event-1.jpg" alt="">
+                                <img src="images/datasacon.jpg" alt="">
                             </figure>
 
                             <div class="event-content-wrap">
                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
+                                    <h3 class="entry-title w-100 m-0"><a href="#">Não esqueça da datas</a></h3>
 
                                     <div class="posted-date">
                                         <a href="#">Aug 25, 2018 </a>
@@ -401,7 +399,7 @@
                                 </header><!-- .entry-header -->
 
                                 <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    <p class="m-0">31 de agosto e 1 de setembro.</p>
                                 </div><!-- .entry-content -->
 
                                 <div class="entry-footer">
@@ -412,12 +410,12 @@
 
                         <div class="event-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <img src="images/event-2.jpg" alt="">
+                                <img src="images/hogwartstore.jpg" alt="">
                             </figure>
 
                             <div class="event-content-wrap">
                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                    <h3 class="entry-title w-100 m-0"><a href="#">Nos  siga nas redes socias </a></h3>
 
                                     <div class="posted-date">
                                         <a href="#">Aug 25, 2018 </a>
@@ -429,7 +427,7 @@
                                 </header><!-- .entry-header -->
 
                                 <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    <p class="m-0">Não perca tempo os links estão no final da pagina.</p>
                                 </div><!-- .entry-content -->
 
                                 <div class="entry-footer">
@@ -440,12 +438,12 @@
 
                         <div class="event-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <img src="images/event-3.jpg" alt="">
+                                <img src="images/contruindo.jpg" alt="">
                             </figure>
 
                             <div class="event-content-wrap">
                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                    <h3 class="entry-title w-100 m-0"><a href="#">Estamos a todo vapor</a></h3>
 
                                     <div class="posted-date">
                                         <a href="#">Aug 25, 2018 </a>
@@ -457,7 +455,7 @@
                                 </header><!-- .entry-header -->
 
                                 <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    <p class="m-0">Os preparativos já começaram e logo estaremos prontos.</p>
                                 </div><!-- .entry-content -->
 
                                 <div class="entry-footer">
@@ -476,12 +474,12 @@
 
                         <div class="cause-wrap d-flex flex-wrap justify-content-between">
                             <figure class="m-0">
-                                <img src="images/featured-causes.jpg" alt="">
+                                <img src="images/cartese.jpg" alt="">
                             </figure>
 
                             <div class="cause-content-wrap">
                                 <header class="entry-header d-flex flex-wrap align-items-center">
-                                    <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
+                                    <h3 class="entry-title w-100 m-0"><a href="#">Campanha ACON</a></h3>
 
                                     <div class="posted-date">
                                         <a href="#">Aug 25, 2018 </a>
@@ -493,7 +491,7 @@
                                 </header><!-- .entry-header -->
 
                                 <div class="entry-content">
-                                    <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
+                                    <p class="m-0">Nos ajude a crescer e fazer muito mais nesta segunda edição da acon</p>
                                 </div><!-- .entry-content -->
 
                                 <div class="entry-footer mt-5">
@@ -501,23 +499,23 @@
                                 </div><!-- .entry-footer -->
                             </div><!-- .cause-content-wrap -->
 
-                            <div class="fund-raised w-100">
+                           <!-- <div class="fund-raised w-100">
                                 <div class="featured-fund-raised-bar barfiller">
                                     <div class="tipWrap">
                                         <span class="tip"></span>
-                                    </div><!-- .tipWrap -->
+                                    </div> .tipWrap -->
 
                                     <span class="fill" data-percentage="83"></span>
                                 </div><!-- .fund-raised-bar -->
 
-                                <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                               <!-- <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
                                     <div class="fund-raised-total mt-4">
                                         Raised: $56 880
-                                    </div><!-- .fund-raised-total -->
+                                    </div> .fund-raised-total -->
 
-                                    <div class="fund-raised-goal mt-4">
+                                   <!-- <div class="fund-raised-goal mt-4">
                                         Goal: $70 000
-                                    </div><!-- .fund-raised-goal -->
+                                    </div> .fund-raised-goal -->
                                 </div><!-- .fund-raised-details -->
                             </div><!-- .fund-raised -->
                         </div><!-- .cause-wrap -->
@@ -532,7 +530,7 @@
             <div class="row">
                 <div class="coL-12">
                     <div class="section-heading">
-                        <h2 class="entry-title">Our Causes</h2>
+                        <h2 class="entry-title">Parceiros</h2>
                     </div><!-- .section-heading -->
                 </div><!-- .col -->
             </div><!-- .row -->
@@ -541,6 +539,49 @@
                 <div class="col-12">
                     <div class="swiper-container causes-slider">
                         <div class="swiper-wrapper">
+                            <!-- =========================== -->
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="images/parceiro.jpg" alt="">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a href="#">@aladosdesingn</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                       <!-- <div class="entry-content">
+                                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                        </div> .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <!--<div class="fund-raised-bar-1 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div> .tipWrap
+
+                                                <span class="fill" data-percentage="83"></span>
+                                            </div>.fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <!--<div class="fund-raised-total mt-4">
+                                                    Raised: $56 880
+                                                </div> .fund-raised-total -->
+
+                                                <!--<div class="fund-raised-goal mt-4">
+                                                    Goal: $70 000
+                                                </div> .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+                            <!-- =========================== -->
                             <div class="swiper-slide">
                                 <div class="cause-wrap">
                                     <figure class="m-0">
@@ -876,32 +917,39 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="foot-about">
-                            <h2><a class="foot-logo" href="#"><img src="images/foot-logo.png" alt=""></a></h2>
+                            <h2><a class="foot-logo" href="index.html"><img src="images/LogoEntreMundos.png" height="150" alt=""></a></h2>
+                            <h2><a class="foot-logo" href="index.html"><img src="images/if02.png" height="100" alt=""></a></h2>
 
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</p>
 
                             <ul class="d-flex flex-wrap align-items-center">
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                
+                                
+                                <!--
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                -->
+                                <li><a href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
+
                             </ul>
                         </div><!-- .foot-about -->
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <h2>Useful Links</h2>
+                        <h2>Páginas</h2>
 
                         <ul>
-                            <li><a href="#">Privacy Polticy</a></li>
-                            <li><a href="#">Become  a Volunteer</a></li>
-                            <li><a href="#">Donate</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Causes</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">News</a></li>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about.html">Sobre</a></li>
+                            <li><a href="causes.html">Cronograma</a></li>
+                            <li><a href="portfolio.html">Atrações</a></li>
+                            <li><a href="news.html">Editais</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                            <li><a href="login.html">Login</a></li>
                         </ul>
                     </div><!-- .col -->
 
@@ -933,18 +981,13 @@
                             <h2>Contact</h2>
 
                             <ul>
-                                <li><i class="fa fa-phone"></i><span>+45 677 8993000 223</span></li>
-                                <li><i class="fa fa-envelope"></i><span>office@template.com</span></li>
-                                <li><i class="fa fa-map-marker"></i><span>Main Str. no 45-46, b3, 56832, Los Angeles, CA</span></li>
+                                <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
+                                <li><i class="fa fa-envelope"></i><span>acon.ifce@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span> IFCE Maracanaú - Av. Parque Central - Distrito Industrial, Maracanaú - CE, 61919-140</span></li>
                             </ul>
                         </div><!-- .foot-contact -->
 
-                        <div class="subscribe-form">
-                            <form class="d-flex flex-wrap align-items-center">
-                                <input type="email" placeholder="Your email">
-                                <input type="submit" value="send">
-                            </form><!-- .flex -->
-                        </div><!-- .search-widget -->
+
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -954,9 +997,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> Equipe de Desenvolvimento ACON</p>
                     </div><!-- .col-12 -->
                 </div><!-- .row -->
             </div><!-- .container -->

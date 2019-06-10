@@ -1,7 +1,8 @@
 <?php 
-$dsn = "mysql:dbname=acon;host=localhost";
+$dsn = "mysql:dbname=Acon-Banco;host=localhost";
 $dbuser  = "JaromAdmin";
 $dbpass = "toor@toor";
+
 
 
 ?>

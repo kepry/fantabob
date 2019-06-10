@@ -11,7 +11,7 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 
 		try {
 			
-			$db = new PDO($dsn, $dbuser, $dbpass);
+			$db = new conexao();
 
 			$sql = $db->query("SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'");
 
