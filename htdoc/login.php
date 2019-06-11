@@ -6,19 +6,26 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 		$email = addslashes($_POST['email']);
 		$senha = addslashes($_POST['senha']);
 
-
-		
+	
 
 		try {
 			
-			$db = new PDO($dsn, $dbuser, $dbpass);
+			$db = new conexao();
 
-			$sql = $db->query("SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'");
+			if(isset($db)){
+				echo "conexão";
+			}
 
-		if ($sql->rowCount() > 0) {
-			$dado = $sql->fetch();
-			$senhaCompare = $dado['senha'];
+			$sql = $db->query("SELECT * FROM usuarios WHERE email = 	'$email' AND senha = '$senha'");
+
+
+		if ($db->contador() > 0) {
+			$dado = $db->getRetorno();
+
+			$senhaCompare = $dado['senha'];	
 			$emailCompare = $dado['email'];
+											
+			
 
 			//recepção de dados 
 
