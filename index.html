@@ -677,62 +677,43 @@
 
     <div class="home-page-limestone">
         <div class="container">
-            <div class="row align-items-end">
-                <div class="coL-12 col-lg-6">
-                    <div class="section-heading">
-                        <h2 class="entry-title">We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</h2>
+            <!--=======================================================================-->
+            <center>
+                <h1>Contagem Regressiva</h1>
+                <p id="demo"></p>
 
-                        <p class="mt-5">Dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet.</p>
-                    </div><!-- .section-heading -->
-                </div><!-- .col -->
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("aug 31, 2019 06:00:00").getTime();
 
-                <div class="col-12 col-lg-6">
-                    <div class="milestones d-flex flex-wrap justify-content-between">
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="images/teamwork.png" alt="">
-                                </div>
+                // Update the count down every 1 second
+                var x = setInterval(function() {
 
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="120" data-speed="2000"></div>
-                                    <div class="counter-k">K</div>
-                                </div>
-
-                                <h3 class="entry-title">Children helped</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="images/donation.png" alt="">
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="79" data-speed="2000"></div>
-                                </div>
-
-                                <h3 class="entry-title">Water wells</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
-                            <div class="counter-box">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <img src="images/dove.png" alt="">
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="253" data-speed="2000"></div>
-                                </div>
-
-                                <h3 class="entry-title">Volunteeres</h3><!-- entry-title -->
-                            </div><!-- counter-box -->
-                        </div><!-- .col -->
-                    </div><!-- .milestones -->
-                </div><!-- .col -->
-            </div><!-- .row -->
+                  // Get today's date and time
+                  var now = new Date().getTime();
+                    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+                    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Output the result in an element with id="demo"
+                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                    
+                  // If the count down is over, write some text 
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "ACON 2019 31 de agosto e 1 de setembro.";
+                  }
+                }, 1000);
+                </script>
+            </center>    
+            <!--=======================================================================-->
         </div><!-- .container -->
     </div><!-- .our-causes -->
 
