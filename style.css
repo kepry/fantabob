@@ -813,7 +813,10 @@ ul.tabs-nav .tab-nav.active {
     padding-bottom: 24px;
     font-size: 36px;
     font-weight: 600;
+        color: #fff;
+
 }
+
 
 .section-heading  .entry-title::before {
     content: '';
@@ -823,7 +826,7 @@ ul.tabs-nav .tab-nav.active {
     width: 64px;
     height: 4px;
     border-radius: 2px;
-    background: #ff5a00;
+    background: #6c206e;
 }
 
 @media screen and (max-width: 992px) {
@@ -982,9 +985,9 @@ ul.tabs-nav .tab-nav.active {
 .our-causes {
     position: relative;
     padding: 96px 0;
-    background: url("images/cause-bg.jpg") no-repeat center;
+    background: url(images/heard.png.jfif)no-repeat center;
     background-size: cover;
-    z-index: 99;
+    
 }
 
 .our-causes::after {
