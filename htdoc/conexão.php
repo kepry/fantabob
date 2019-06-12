@@ -31,7 +31,7 @@
 
 			if($this->numRows == null){
 
-					return $this->numRows = 'erro';
+					return $this->numRows = 'vazio';
 
 				}
 				else{
