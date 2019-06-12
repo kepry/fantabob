@@ -7,7 +7,7 @@
 
 		public function __construct(){
 
-			$this->dsn = new PDO("mysql:dbname=acon-banco;host=localhost","JaromAdmin","toor@toor");
+			$this->dsn = new PDO("mysql:dbname=bancoacon;host=localhost","JaromAdmin","toor@toor");
 
 		}
 
@@ -31,14 +31,14 @@
 
 			if($this->numRows == null){
 
-					return $this->numRows = 'erro';
+					return $this->numRows = 'vazio';
 
 				}
 				else{
 					return $this->numRows;
 				}
 
-		}
+		
 
 
 
