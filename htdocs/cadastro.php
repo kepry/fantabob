@@ -14,13 +14,13 @@ require_once "conexão.php";
 
 
         $db = new conexao();
-        $sql = $db->query(" SELECT * FROM usuarios WHERE email = '$email'  ");
+        $db = $db->query(" SELECT * FROM usuarios WHERE email = '$email'  ");
         //nesse trecho ele verifica se existe email no banco
        
         
         if($db->contador() == 'erro'){
-            $db = new conexao();
-            $sql = $db->query("INSERT INTO usuarios(email,senha,nome) VALUES ('$email', '$senha', '$nome')");
+            $db = new PDO($dsn, $dbuser, $dbpass);
+            $db = $db->query("INSERT INTO usuarios(email,senha,nome) VALUES ('$email', '$senha', '$nome')");
                 
                 header("Location: ../login.html");
         //utilizando esse método ele checa o numero de respostas dada pelo sql  se não existe igual faça
