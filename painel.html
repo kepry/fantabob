@@ -194,7 +194,49 @@
     </header><!-- .site-header -->
 
     <!-- =================== Corpo aqui =========================== -->
-    <input type="color" name="favcolor" value="#ff0000">
+       <div class="black">
+
+             <hr>
+    <br>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
+    <style type="text/css">
+        #demo{
+            color: black;
+        }
+    </style>
+
+    <hr>
+    <style type="text/css">
+        .black{
+            color: black;
+           text-align: center;
+        }
+    </style>
+
+    <h1>Meus Favoritos</h1>
+
+
+    <h2>Cronograma geral</h2>
+    <p style="color: red;">ctrol para seleciona mais que um no pc</p>
+
+           <select size="8" style="width: 300px; border: solid 10px red; text-decoration-style: none;" multiple="">
+               <optgroup label="31/08"></optgroup>
+               <option value="01">01</option>
+               <option value="02">02</option>
+               <option value="03">03</option>
+               <optgroup label="01/09"></optgroup>
+               <option value="01">01</option>
+               <option value="02">02</option>
+               <option value="03">03</option>
+            </select>
+       </div> 
+    
     <!-- =================== /Corpo aqui =========================== -->
     
 
