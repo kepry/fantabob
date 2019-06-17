@@ -38,11 +38,8 @@
 					return $this->numRows;
 				}
 
-		}
+			}
+}
 
-
-
-
-	}
 
 ?>
