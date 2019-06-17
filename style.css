@@ -420,12 +420,12 @@ a:hover, a:active {
 ----------------------------------*/
 .btn {
     padding: 18px 40px;
-    border: 2px solid #6c206e;
+    border: 2px solid black;
     border-radius: 24px;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
-    color: #6c206e;
+    color:black;
     outline: none;
 }
 
