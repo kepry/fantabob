@@ -20,6 +20,14 @@
 	private $email;
 	private $senha;
 	private $nome;
+
+	private $nome_social;
+	private $escolaridade;
+	private $data_nacimento;
+	private $endereco;
+	private $telefone;
+
+
 	private $pdo;
 
 
@@ -27,7 +35,7 @@
 		
 
 		try {
-			 $this->pdo = new PDO("mysql:dbname=acon-banco;host=localhost","JaromAdmin","toor@toor");
+			 $this->pdo = new PDO("mysql:dbname=bancoacon;host=localhost","JaromAdmin","toor@toor");
 			 echo "conexão feita";
 		}
 
@@ -48,6 +56,11 @@
 			 	 $this->email = $data['email'];
 			 	 $this->senha = $data['senha'];
 			 	 $this->nome = $data['nome'];
+			 	 $this->nome_social = $data['nome_social'];
+			 	 $this->escolaridade = $data['escolaridade'];
+			 	 $this->data_nacimento = $data['data_nacimento'];
+			 	 $this->endereco = $data['endereco'];
+			 	 $this->telefone = $data['telefone'];
 
 		}	
 	}
@@ -55,11 +68,7 @@
 }
 
 
-	
-	public function SetId($i){
-		$this->id = $i;
-	}
-	
+
 	public function SetNome($n){
 		$this->nome = $n;
 	}
@@ -69,6 +78,22 @@
 	public function SetSenha($s){
 		$this->senha = $s;
 	}
+	public function SetNome_Social($ns){
+		$this->nome_social = $ns;
+	}
+	public function SetEscolaridade($escolaridade){
+		$this->escolaridade = $escolaridade;
+	}
+	public function SetData($data){
+		$this->data_nacimento = $data;
+	}
+	public function SetEndereco($endereco){
+		$this->endereco = $endereco;
+	}
+	public function SetTelefone($tel){
+		$this->telefone = $tel;
+	}
+
 	//Métodos de configurar;
 
 
@@ -79,9 +104,23 @@
 	public function GetEmail(){
 		return $this->email;
 	}
-
-	public function GetId(){
-		return $this->id;
+	public function GetSenha(){
+		return $this->nome_social;
+	}
+	public function GetEscolaridade(){
+		return $this->escolaridade;
+	}
+	public function GetData(){
+		return $this->data_nacimento;
+	}
+	public function GetEndereco(){
+		return $this->endereco;
+	}
+	public function GetTelefone(){
+		return $this->telefone;
+	}
+	public function GetNome_Social(){
+		return $this->nome_social;
 	}
 	//Métodos para devolver dados
 
@@ -102,18 +141,7 @@
 		);
 
 		}
-		else{
-			$sql = "INSERT INTO usuarios SET id = ? ,email = ?, senha = ?, nome = ? ";
-			$sql = $this->pdo->prepare($sql);
-			$sql->execute(array(
-				$this->id,
-				$this->email,
-				$this->senha, 
-				$this->nome)
-			//Método para cadastro
-		);
-
-		}
+		
 	}
 }
 

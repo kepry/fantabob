@@ -4,7 +4,7 @@ include ("conexão.php");
 if (isset($_POST['email']) && empty($_POST['email']) == false) 
 	if (isset($_POST['senha']) && empty($_POST['senha']) == false) {
 		$email = addslashes($_POST['email']);
-		$senha = md5(addslashes($_POST['senha']));
+		$senha = addslashes($_POST['senha']);
 
 	
 
@@ -16,7 +16,7 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 				echo "conexão";
 			}
 
-			$sql = $db->query("SELECT * FROM usuarios WHERE email = 	'$email' AND senha = '$senha'");
+			$sql = $db->query("SELECT * FROM usuarios WHERE email = '$email'");
 
 
 		if ($sql->contador() > 0) {
