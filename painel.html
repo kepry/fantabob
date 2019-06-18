@@ -42,10 +42,30 @@
                         </div><!-- .header-bar-text -->
                     </div><!-- .col -->
 
+<style type="text/css">
+    .modeloAly{
+        border-radius: 100px;
+        border: solid 2px black;
+        background-color: transparent;
+        color: white;
+
+    }
+    .modeloAly:hover{
+
+       /* background-color: #a71313;
+        color: #731abf;
+        background-color: #f8bc04;
+        border-radius: 100px;
+        color: #0a7319;*/
+        border: solid 2px gray;
+        background-color: black;
+    }
+
+</style>
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                        <div class="donate-btn">
                             <!-- Button trigger modal -->
-                                <button type="button" class="botao" data-toggle="modal" data-target="#exampleModalCenter">
+                                <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter">
                                   Login
                                 </button>
 
@@ -64,11 +84,11 @@
                                         <form class="px-4 py-3" method="POST" action="htdoc/login.php"?">
                                             <div class="form-group">
                                               <h4 class="label1"> Endereço de Email</h4>
-                                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="" autofocus>
                                             </div>
                                             <div class="form-group">
                                               <h4 class="label1">Senha</h4>
-                                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
                                             </div>
                                             <div class="form-group">
                                               <div class="form-check">
@@ -89,7 +109,7 @@
 
 
                                 <!-- Button trigger modal -->
-                                <button type="button" class="botao" data-toggle="modal" data-target="#exampleModalCenter2">
+                                <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter2">
                                   Inscrição
                                 </button>
                                  <!-- Modal -->
@@ -107,15 +127,15 @@
                                         <form class="px-4 py-3" method="POST" action="htdoc/cadastro.php"?">
                                             <div class="form-group">
                                                 <h4 class="label1">Nome</h4>
-                                                <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required>
+                                                <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
                                             </div> <!-- form-group// -->
                                             <div class="form-group">
                                               <h4 class="label1"> Endereço de Email</h4>
-                                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
                                             </div>
                                             <div class="form-group">
                                               <h4 class="label1">Senha</h4>
-                                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
                                             </div>
                                             <div class="form-group">
                                                 <h4 class="label1">Escolaridade</h4>
@@ -178,6 +198,8 @@
                                 <li class="current-menu-item"><a href="painel.html">Início</a></li>
                                 <li><a href="#">minha conta</a></li>
                                 <li><a href="#">favorito</a></li>
+                                <li><a href="#">Cadastro de equipe</a></li>
+                                <li><a href="#">Compra de ingressos</a>
                             </ul>
                         </nav><!-- .site-navigation -->
 
@@ -194,6 +216,12 @@
     </header><!-- .site-header -->
 
     <!-- =================== Corpo aqui =========================== -->
+
+    <div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked autocomplete="off"> Checado
+  </label>
+</div>
        <div class="black">
 
              <hr>
@@ -225,7 +253,7 @@
     <h2>Cronograma geral</h2>
     <p style="color: red;">ctrol para seleciona mais que um no pc</p>
 
-           <select size="8" style="width: 300px; border: solid 10px red; text-decoration-style: none;" multiple="">
+           <select  style="width: 300px; border: solid 10px red; text-decoration-style: none;" multiple="">
                <optgroup label="31/08"></optgroup>
                <option value="01">01</option>
                <option value="02">02</option>
