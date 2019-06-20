@@ -7,7 +7,7 @@
 
 		public function __construct(){
 
-			$this->dsn = new PDO("mysql:dbname=acon-banco;host=localhost","JaromAdmin","toor@toor");
+			$this->dsn = new PDO("mysql:dbname=bancoacon;host=localhost","JaromAdmin","toor@toor");
 
 		}
 

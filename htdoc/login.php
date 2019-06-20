@@ -16,7 +16,7 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 				echo "conexão";
 			}
 
-			$sql = $db->query("SELECT * FROM usuarios WHERE email = 	'$email' AND senha = '$senha'");
+			$sql = $db->query("SELECT * FROM usuarios WHERE email = '$email'");
 
 
 		if ($db->contador() > 0) {
@@ -31,7 +31,7 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 
 			if($emailCompare == $email && $senhaCompare === $senha){
 				$_SESSION['id'] = $dado['id'];
-				header("Location: ../index.php");
+				header("Location: ../user/perfil.html");
 				$log = "Logou".getMessage();
 			//método de comparaçãop de dados
 			}
