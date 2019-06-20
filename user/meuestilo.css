@@ -65,11 +65,10 @@ body {
           .sidenav {padding-top: 15px;}
           .sidenav a {font-size: 18px;}
         }
-        header{
-          background-color: #731abf;
-          text-align: center;
-        }
-        form{
-          margin: auto;
-        }
 /*=========================== /dados do menu=====================*/
+ header{
+          background-color: #731abf;
+        }
+header img{
+    text-align: center;
+}
