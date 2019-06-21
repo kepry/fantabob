@@ -59,6 +59,7 @@ body {
         #main {
           transition: margin-left .5s;
           padding: 16px;
+          float: left;
         }
 
         @media screen and (max-height: 450px) {
@@ -67,8 +68,24 @@ body {
         }
 /*=========================== /dados do menu=====================*/
  header{
-          background-color: #731abf;
+          background-color: #6c206e;
+          text-align: center;
         }
-header img{
-    text-align: center;
+form{
+  clear: both;
+  margin-top: 10px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+fieldset{
+  margin-top: 10px;
+  border: 10px #6c206e solid;
+  border-radius: 10px;
+}
+@media screen and (max-width:  450px) {
+          form {width: 100%}
+        }
+.btn btn-primary btn-block{
+  width: 20%;
 }
