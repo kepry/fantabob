@@ -19,8 +19,8 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 			$sql = $db->query("SELECT * FROM usuarios WHERE email = '$email'");
 
 
-		if ($sql->contador() > 0) {
-			$dado = $sql->getRetorno();
+		if ($db->contador() > 0) {
+			$dado = $db->getRetorno();
 
 			$senhaCompare = $dado['senha'];	
 			$emailCompare = $dado['email'];
@@ -31,31 +31,31 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 
 			if($emailCompare == $email && $senhaCompare === $senha){
 				$_SESSION['id'] = $dado['id'];
-				header("Location: ../user/perfil.html.php");
+				header("Location: ../User/perfil.php");
 				$log = "Logou".getMessage();
 			//método de comparaçãop de dados
 			}
 		}
 			else{
-				header("location: ../login.html");
+				header("location: ../index.html");
 				echo "Erro de Conexão".$e.getMessage();
 			
 		}
 
 			
 	} 	catch (PDOException $e) {
-				header("location: ../login.html");
+				header("location: ../index.html");
 				echo "Erro de Conexão".$e.getMessage();
 		}
 
 
 }else{
-	header("Location: ../login.html");
+	header("Location: ../index.html");
 }
 	
 
 else{
-	header("Location: ../login.html");
+	header("Location: ../index.html");
 	$erro = "Você não Entrou Com Todos os Dados!".getMessage();
 }
 

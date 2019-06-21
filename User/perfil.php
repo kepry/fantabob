@@ -2,7 +2,33 @@
 
   <html>
 
-    <head>
+    <head>    
+      <?php
+        session_start();
+        
+        if(isset($_SESSION['id']) == null || 0   ){
+
+            header("location: ../index.html");
+            
+        }
+
+       
+        include ("../htdoc/crud.php");
+
+
+        $db = new Usuario($_SESSION['id']);
+        $nome = $db->GetNome();
+        $nome_social = $db->GetNome_Social();
+        $endereco = $db->GetEndereco();
+        $medio = $db->GetEscolaridade();
+        $telefone = $db->GetTelefone();
+        $data_nacimento = $db->GetData();
+        $email = $db->GetEmail();
+       
+
+
+
+      ?>
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="utf-8">
@@ -14,7 +40,7 @@
     <body>
 
       <header>
-        <img width="300px;" height="72px"  alt="logo" src="../images/acon.png">
+        <img width="300px;" height="100px"  alt="logo" src="../images/acon.png">
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <img src="../images/ACON(1).png" width="150px" height="150px" style="border-radius: 100px; border: solid 1px gray;" >
@@ -22,6 +48,7 @@
           <a href="#">Conta</a>
           <a href="#">Equipe</a>
           <a href="#">Ingressos</a>
+          <a href="../htdoc/logoff.php">Sair</a>
         </div>
         <div id="main">
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -46,28 +73,28 @@
 
 
 
-      <form method="POST" action="htdoc/cadastro.php"?" >
+      <form method="POST"  >
         <fieldset>
           <legend>Dados Cadastrais</legend>
 
           <div class="form-group">
                                     <label for="nome">Nome Completo:</label><br>
-                                    <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required id="nome">
+                                    <input name="nome" class="form-control" placeholder="<?php echo $nome; ?>" type="text" required id="nome">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="nome_social">Nome Social:</label><br> 
-                                    <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
+                                    <input name="nome_social" class="form-control" placeholder="<?php echo $nome_social; ?>" type="text" id="nome_social">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="email">E-mail:</label> <br>
-                                    <input name="email" class="form-control" placeholder="Email para fazer a Inscrição" type="email" required autofocus id="email" disabled="">
+                                    <input name="email" class="form-control" placeholder="<?php echo $email; ?>" type="email" required autofocus id="email" disabled="">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="senha">Senha:</label> <br>
                                     <input name="senha" class="form-control" placeholder="********" type="password" required minlength="8" id="senha">
                                 </div> <!-- form-group// -->    
                                 <div class="form-group">
-                                    <label for="escolaridade"></label> Escolaridade:<br>
+                                    <label for="escolaridade"></label> <?php echo $medio ?>:<br>
                                     <select name="escolaridade" id="escolaridade">
                                         <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
                                         <option value="Ensino Fundamental">Ensino Fundamental</option>
@@ -81,15 +108,20 @@
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="data_nacimento">Data de Nacimento:</label> <br>
-                                    <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date" id="data_nacimento">
+                                    <input type="date" value="<?php echo $data;?>" disabled>
+                                    <input name="data_nacimento" class="form-control"  VALUE="2019-06-06" type="date" id="data_nacimento">
+                                    <script type="text/javascript">
+                                      var datecontrol = document.querySeletector('input[type="data_nacimento"]');
+                                      datecontrol.value = '<?php echo $data;?>'
+                                    </script>
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="endereco">Endereço:</label> <br>
-                                    <input name="endereco" class="form-control" placeholder="Endereço" type="text" required id="endereco">
+                                    <input name="endereco" class="form-control" placeholder="<?php echo $endereco; ?>" type="text" required id="endereco">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="Telefone">Telefone:</label><br>
-                                    <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required id="Telefone">
+                                    <input name="Telefone" class="form-control" placeholder="<?php echo $telefone; ?>" type="tel" minlength="11" maxlength="11" required id="Telefone">
                                 </div> <!-- form-group// -->
                             
                                                               
@@ -104,6 +136,17 @@
                                           
       </form>
 
+
+      <?php
+        if(isset($_POST['nome'])){
+            echo $_POST['nome'];
+
+        }
+
+
+
+
+      ?>
 
 
 

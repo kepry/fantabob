@@ -6,7 +6,7 @@ session_start();
 		$_SESSION['senha'] = null;
 		$_SESSION['email'] = null;
 		
-		header("Location: ../index.php");
+		header("Location: ../index.html");
 	}
 	
 ?>

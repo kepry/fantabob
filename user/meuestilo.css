@@ -68,7 +68,7 @@ body {
         }
 /*=========================== /dados do menu=====================*/
  header{
-          background-color: #6c206e;
+          background-color: black;/*background-color: #6c206e;*/
           text-align: center;
         }
 form{
