@@ -81,17 +81,17 @@
 	public function SetNome_Social($ns){
 		$this->nome_social = $ns;
 	}
-	public function SetEscolaridade($escolaridade){
-		$this->escolaridade = $escolaridade;
+	public function SetEscolaridade($esc){
+		$this->escolaridade = $esc;
 	}
-	public function SetData($data){
-		$this->data_nacimento = $data;
+	public function SetData($d){
+		$this->data_nacimento = $d;
 	}
-	public function SetEndereco($endereco){
-		$this->endereco = $endereco;
+	public function SetEndereco($end){
+		$this->endereco = $end;
 	}
-	public function SetTelefone($tel){
-		$this->telefone = $tel;
+	public function SetTelefone($t){
+		$this->telefone = $t;
 	}
 
 	//Métodos de configurar;
@@ -129,13 +129,19 @@
 	public function salvar(){
 		if(!empty($this->id)){
 
-			$sql = "UPDATE usuarios SET nome = ?, email = ?, senha = ?  where id = ? ";
+			$sql = "UPDATE usuarios SET nome = ?, email = ?, senha = ?, nome_social = ?, endereco = ?,escolaridade = ?, data_nacimento = ?,telefone = ? where id = ? ";
 			$sql = $this->pdo->prepare($sql);
 			$sql->execute(array(
 				$this->nome,
 				$this->email,
 				$this->senha,
-				$this->id )
+				$this->nome_social,
+				$this->endereco,
+				$this->escolaridade,
+				$this->data_nacimento,
+				$this->telefone,
+				$this->id)
+				
 				
 			//Método para atualizar
 		);

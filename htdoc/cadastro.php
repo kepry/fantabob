@@ -11,11 +11,9 @@ require_once "conexão.php";
                 $nome_social = addslashes($_POST['nome_social']);
                 $endereco = addslashes($_POST['endereco']);
                 $data_nacimento = addslashes($_POST['data_nacimento']);
-                $telefone = addslashes($_POSt['telefone']);
+                $telefone = addslashes($_POST['Telefone']);
                 $escolaridade = addslashes($_POST['escolaridade']);
-        
-    
-
+  
                 try {
 
 
@@ -28,7 +26,7 @@ require_once "conexão.php";
                          $db = new conexao();
                          $sql = $db->query("INSERT INTO usuarios(nome,nome_social,email, senha, escolaridade, data_nacimento, endereco, telefone) VALUES ('$nome','$nome_social','$email','$senha', '$escolaridade', '$data_nacimento','$endereco','$telefone')");
                 
-                            header("Location: ../login.html");
+                            header("Location: ../index.html");
                             //utilizando esse método ele checa o numero de respostas dada pelo sql  se não existe igual ele recebe para seu retorno a string vazio e assim pode adicionar o novo parametro; 
 
                      }

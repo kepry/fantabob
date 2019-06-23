@@ -11,7 +11,7 @@ require_once "conexão.php";
                 $nome_social = addslashes($_POST['nome_social']);
                 $endereco = addslashes($_POST['endereco']);
                 $data_nacimento = addslashes($_POST['data_nacimento']);
-                $telefone = addslashes($_POSt['telefone']);
+                $telefone = addslashes($_POST['telefone']);
         
     
 

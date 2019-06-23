@@ -4,7 +4,7 @@ include ("conexão.php");
 if (isset($_POST['email']) && empty($_POST['email']) == false) 
 	if (isset($_POST['senha']) && empty($_POST['senha']) == false) {
 		$email = addslashes($_POST['email']);
-		$senha = addslashes($_POST['senha']);
+		$senha = md5(addslashes($_POST['senha']));
 
 	
 
