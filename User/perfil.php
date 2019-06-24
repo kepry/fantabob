@@ -71,15 +71,19 @@
 
 
 
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
 
 
-      <form method="POST"  >
+
+  <form method="POST">
         <fieldset>
           <legend>Dados Cadastrais</legend>
 
           <div class="form-group">
                                     <label for="nome">Nome Completo:</label><br>
-                                    <input name="nome" class="form-control" placeholder="<?php echo $nome; ?>" type="text" required id="nome">
+                                    <input name="nome" class="form-control" placeholder="<?php echo $nome; ?>" type="text" id="nome">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="nome_social">Nome Social:</label><br> 
@@ -87,14 +91,14 @@
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="email">E-mail:</label> <br>
-                                    <input name="email" class="form-control" placeholder="<?php echo $email; ?>" type="email" required autofocus id="email" disabled="">
+                                    <input name="email" class="form-control" placeholder="<?php echo $email; ?>" type="email" id="email" disabled="">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="senha">Senha:</label> <br>
-                                    <input name="senha" class="form-control" placeholder="********" type="password" required minlength="8" id="senha">
+                                    <input name="senha" class="form-control" placeholder="********" type="password" minlength="8" id="senha">
                                 </div> <!-- form-group// -->    
                                 <div class="form-group">
-                                    <label for="escolaridade"></label> <?php echo $medio ?>:<br>
+                                    <label for="escolaridade"><?php echo $medio ?>:</label><br>
                                     <select name="escolaridade" id="escolaridade">
                                         <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
                                         <option value="Ensino Fundamental">Ensino Fundamental</option>
@@ -108,20 +112,19 @@
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="data_nacimento">Data de Nacimento:</label> <br>
-                                    <input type="date" value="<?php echo $data;?>" disabled>
-                                    <input name="data_nacimento" class="form-control"  VALUE="2019-06-06" type="date" id="data_nacimento">
+                                    <input name="data_nacimento" class="form-control"  VALUE="<?php echo $data;?>" type="date" id="data_nacimento">
                                     <script type="text/javascript">
-                                      var datecontrol = document.querySeletector('input[type="data_nacimento"]');
+                                      var datecontrol = document.querySeletector('input[type="data');
                                       datecontrol.value = '<?php echo $data;?>'
                                     </script>
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="endereco">Endereço:</label> <br>
-                                    <input name="endereco" class="form-control" placeholder="<?php echo $endereco; ?>" type="text" required id="endereco">
+                                    <input name="endereco" class="form-control" placeholder="<?php echo $endereco; ?>" type="text" id="endereco">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="Telefone">Telefone:</label><br>
-                                    <input name="Telefone" class="form-control" placeholder="<?php echo $telefone; ?>" type="tel" minlength="11" maxlength="11" required id="Telefone">
+                                    <input name="Telefone" class="form-control" placeholder="<?php echo $telefone; ?>" type="tel" minlength="11" maxlength="11"  id="Telefone">
                                 </div> <!-- form-group// -->
                             
                                                               
@@ -148,6 +151,12 @@
 
       ?>
 
+
+</div>
+
+<div class="parallax"></div>
+
+      
 
 
 

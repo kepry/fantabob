@@ -75,7 +75,7 @@ form{
   clear: both;
   margin-top: 10px;
   text-align: center;
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 fieldset{
@@ -89,3 +89,24 @@ fieldset{
 .btn btn-primary btn-block{
   width: 20%;
 }
+/*=========================== paralax=====================*/
+body, html {
+  height: 100%;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url('https://data2.1freewallpapers.com/detail/grin-pokemon-purple.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*=========================== paralax=====================*/
