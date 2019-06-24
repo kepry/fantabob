@@ -71,9 +71,9 @@
 
 
 
-<div class="parallax"></div>
+<div class="parallax">test</div>
 
-<div style="height:1000px;background-color:red;font-size:36px">
+
 
 
 
@@ -152,9 +152,7 @@
       ?>
 
 
-</div>
 
-<div class="parallax"></div>
 
       
 
