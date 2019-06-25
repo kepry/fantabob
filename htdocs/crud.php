@@ -68,6 +68,7 @@
 }
 
 
+	
 
 	public function SetNome($n){
 		$this->nome = $n;
@@ -149,6 +150,18 @@
 		}
 		
 	}
+    public function delete($i){
+    	$sql = "  DELETE FROM usuarios WHERE id = ?  ";
+    	$sql = $this->pdo->prepare($sql);
+    	$sql->execute(array(
+    			$this->id
+
+    	)
+    );
+
+
+
+ }
 }
 
 	

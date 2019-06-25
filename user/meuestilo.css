@@ -16,6 +16,14 @@
         border: solid 2px gray;
         background-color: black;
     }
+
+    .alerta {
+         padding: 25px;
+         border: 1px solid gray;
+         border-radius: 3px;
+         margin: 10px;
+        font-size: 18px;
+}
 /*=========================== dados do menu=====================*/
 body {
           font-family: "Lato", sans-serif;
@@ -54,6 +62,11 @@ body {
           right: 25px;
           font-size: 36px;
           margin-left: 50px;
+        }
+        .logo{
+          margin-left: auto;
+         margin-right: auto;
+         
         }
 
         #main {
@@ -97,10 +110,11 @@ body, html {
 
 .parallax {
   /* The image used */
-  background-image: url('https://data2.1freewallpapers.com/detail/grin-pokemon-purple.jpg');
+  background: url('../images/Sense.jpg');
 
   /* Full height */
-  height: 100%; 
+  height: 300px;
+
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -110,3 +124,4 @@ body, html {
 }
 
 /*=========================== paralax=====================*/
+

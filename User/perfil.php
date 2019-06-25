@@ -24,7 +24,8 @@
         $telefone = $db->GetTelefone();
         $data_nacimento = $db->GetData();
         $email = $db->GetEmail();
-       
+       $valor = false;
+
 
 
 
@@ -39,8 +40,9 @@
 
     <body>
 
+
       <header>
-        <img width="300px;" height="100px"  alt="logo" src="../images/acon.png">
+        <img width="300px;" height="135px"  alt="logo" src="../images/acon.png">
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <img src="../images/ACON(1).png" width="150px" height="150px" style="border-radius: 100px; border: solid 1px gray;" >
@@ -71,7 +73,7 @@
 
 
 
-<div class="parallax">test</div>
+<div class="parallax"></div>
 
 
 
@@ -112,7 +114,7 @@
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="data_nacimento">Data de Nacimento:</label> <br>
-                                    <input name="data_nacimento" class="form-control"  VALUE="<?php echo $data;?>" type="date" id="data_nacimento">
+                                    <input name="data_nacimento" class="form-control"  VALUE="<?php echo $data_nacimento;?>" type="date" id="data_nacimento">
                                     <script type="text/javascript">
                                       var datecontrol = document.querySeletector('input[type="data');
                                       datecontrol.value = '<?php echo $data;?>'
@@ -130,26 +132,35 @@
                                                               
                                 
                                             <button type="submit" class="btn btn-outline-dark">Alterar Dados</button>
-                                            <form action="" method="POST">
-                                              <button type="submit" class="btn btn-outline-dark">Apagar a Conta</button>
-                                            </form>
                                             
+                                                
+
+                                            <form method="POST">
+                                              <button  rel="stylesheet" type="text/css" href="meuestilo.css" id="btn"  class="btn btn-outline-dark"  onclick="confirm()"> 
+                                              </button>
+
+                                            </form>
+                                            <script type="text/javascript">
+                                             var check = confirm("Deseja continuar?");
+                                             if (check == true){
+
+                                                 var x = '<div  rel="stylesheet" type="text/css" href="meuestilo.css"> teste </div>';
+
+
+                                             };
+                                             else{
+                                              var valor = 0;
+                                             }
+
+                                            </script>
                                                                                              
         </fieldset>
                                           
       </form>
 
 
-      <?php
-        if(isset($_POST['nome'])){
-            echo $_POST['nome'];
-
-        }
 
 
-
-
-      ?>
 
 
 
@@ -158,6 +169,82 @@
 
 
 
+
+
+ <?php 
+  
+
+
+        if(isset($_POST['nome']) && empty($_POST['nome']) == false){
+
+         
+              $db->Setnome($_POST['nome']);
+              $update = $db->salvar();
+
+          }
+          //Método Salvar nome;
+          if(isset($_POST['nome_social']) && empty($_POST['nome_social']) == false){
+         
+              $db->SetNome_Social($_POST['nome_social']);
+              $update = $db->salvar();
+
+          }
+          //Método Salvar nome social;
+
+          if(isset($_POST['senha']) && empty($_POST['senha']) == false){
+
+            $db->SetSenha(md5($_POSt['senha']));
+            $db->Salvar();
+
+             
+          } 
+          //Método Salvar senha;
+
+
+          if(isset($_POST['escolaridade']) && empty($_POST['escolaridade']) == false){
+         
+              $db->SetEscolaridade($_POST['escolaridade']);
+              $update = $db->salvar();
+
+          } 
+          
+          //Método para salvar escolaridade
+
+          if(isset($_POST['data_nacimento']) && empty($_POST['data_nacimento']) == false){
+         
+              $db->SetData($_POST['data_nacimento']);
+              $update = $db->salvar();
+
+          } 
+          //Método para salvar data
+
+
+          if(isset($_POST['telefone']) && empty($_POST['telefone']) == false){
+         
+             $db->SetTelefone($_POST['telefone']);
+             $update = $db->salvar();
+
+          }
+        //Método para salvar telefone
+          if(isset($_POST['endereco']) && empty($_POST['endereco']) == false){
+
+         
+              $db->SetEndereco($_POST['endereco']);
+              $update = $db->salvar();
+
+          }
+
+        //Método para setar o novo valor e enviar para o crud onde vai ser salvo
+
+          if(isset($_POST['delete']) && empty($_POST['delete']) == false ){
+                  header("Location: ../index.html");
+          }
+
+
+         
+           
+
+    ?>
 
 
 
