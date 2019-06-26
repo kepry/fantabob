@@ -135,24 +135,7 @@
                                             
                                                 
 
-                                            <form method="POST">
-                                              <button  rel="stylesheet" type="text/css" href="meuestilo.css" id="btn"  class="btn btn-outline-dark"  onclick="confirm()"> 
-                                              </button>
-
-                                            </form>
-                                            <script type="text/javascript">
-                                             var check = confirm("Deseja continuar?");
-                                             if (check == true){
-
-                                                 var x = '<div  rel="stylesheet" type="text/css" href="meuestilo.css"> teste </div>';
-
-
-                                             };
-                                             else{
-                                              var valor = 0;
-                                             }
-
-                                            </script>
+                                            
                                                                                              
         </fieldset>
                                           
@@ -160,12 +143,32 @@
 
 
 
+<form method="POST" style="margin-top: 20px;">
+                        <!-- Botão para acionar modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+  Apagar Conta permanetimente
+</button>
 
-
-
-
-
-      
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Tem certeza?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ao apagar a conta não sera possivel recuperar
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button>
+        <a type="button" href="../htdoc/delete.php" class="btn btn-primary">Confirma</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

@@ -40,7 +40,7 @@ require_once "conexão.php";
 
                 } 
       
-            catch (Exception $e) {
+            catch (PDOException $e) {
                  echo 'Erro'.$e.getMessage();
              }
 
