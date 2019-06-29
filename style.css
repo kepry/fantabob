@@ -288,6 +288,7 @@ a:hover, a:active {
 
 .hero-content-overlay .entry-footer a.btn {
     color: #fff;
+    
 }
 
 .hero-slider .pagination-wrap {
@@ -988,6 +989,8 @@ ul.tabs-nav .tab-nav.active {
     background: url(images/heard.png.jfif)no-repeat center;
     background-size: cover;
     
+    
+    
 }
 
 .our-causes::after {
@@ -1307,6 +1310,7 @@ ul.tabs-nav .tab-nav.active {
     position: relative;
     padding:  70px 0 96px;
     background: none;
+    
 }
 
 .causes-page .our-causes .cause-wrap {
@@ -2175,7 +2179,7 @@ ul.tabs-nav .tab-nav.active {
 
 #carouselExampleIndicators {
     margin-top: 45%;
-    width: 110%    
+        
 }
 
 .label1 {
@@ -2201,3 +2205,22 @@ ul.tabs-nav .tab-nav.active {
         border: solid 2px gray;
         background-color: black;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ajeitando {
+    background-color: black;
+}
+
+
