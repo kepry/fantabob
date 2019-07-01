@@ -192,6 +192,7 @@
     				$this->id
 
     	));
+    	//método para excluir dado da tabela usuarios usando o where para endentificar o user 
     }		
 }
 
