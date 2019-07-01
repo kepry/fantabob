@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-        <link rel="icon" href="images/icone.ico" type="image/x-icon" />
+    <link rel="icon" href="images/icone.ico" type="image/x-icon" />
     <title>ACON - Entre Mundos!</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,228 +27,484 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="single-page contact-page">
-<header class="site-header">
-    <div class="top-header-bar">
-        <div class="container">
-            <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
-                <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                    <div class="header-bar-email">
-                        e-MAIL: <a href="#">acon.ifce@gmail.com</a>
-                    </div><!-- .header-bar-email -->
 
-                    <div class="header-bar-text">
-                        <p>Contato: <span>+55 (85) 98844-4394 </span></p>
-                    </div><!-- .header-bar-text -->
-                </div><!-- .col -->
+<body class="single-page causes-page">
+    <header class="site-header">
+        <div class="top-header-bar">
+            <div class="container">
+                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
+                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="header-bar-email">
+                            e-MAIL: <a href="#">acon.ifce@gmail.com</a>
+                        </div><!-- .header-bar-email -->
 
-                <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                       <div class="donate-btn">
+                        <div class="header-bar-text">
+                            <p>Contato: <span>+55 (85) 98844-4394 </span></p>
+                        </div><!-- .header-bar-text -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                        <div class="donate-btn">
                             <!-- Button trigger modal -->
-                                <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter">
-                                  Login
-                                </button>
+                            <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter">
+                                Login
+                            </button>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                        </button>
-                                      </div>
-                                      <div class="modal-body">
-                                      <!--Formulario começa aqui-->
-                                        <form class="px-4 py-3" method="POST" action="htdoc/login.php"?">
-                                            <div class="form-group">
-                                              <h4 class="label1"> Endereço de Email</h4>
-                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="" autofocus>
-                                            </div>
-                                            <div class="form-group">
-                                              <h4 class="label1">Senha</h4>
-                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
-                                            </div>
-                                            <div class="form-group">
-                                              <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                                <p class="label1">Lembre-se de mim</p>
-                                              </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-primar">Iniciar sessão</button>
-                                          </form>
-                                          <div class="dropdown-divider"></div>
-                                          <a class="dropdown-item" href="inscricao.html">Novo por aqui? Inscreva-se</a>
-                                          <a class="dropdown-item" href="#">Esqueceu a senha?</a>
-                                        <!--termina aqui-->
-                                      </div>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--Formulario começa aqui-->
+                                            <form class="px-4 py-3" method="POST" action="htdoc/login.php" ?">
+                                                <div class="form-group">
+                                                    <h4 class="label1"> Endereço de Email</h4>
+                                                    <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="" autofocus>
+                                                </div>
+                                                <div class="form-group">
+                                                    <h4 class="label1">Senha</h4>
+                                                    <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                        <p class="label1">Lembre-se de mim</p>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primar">Iniciar sessão</button>
+                                            </form>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="inscricao.html">Novo por aqui? Inscreva-se</a>
+                                            <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                                            <!--termina aqui-->
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
+                            </div>
 
 
-                                <!-- Button trigger modal -->
-                                <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter2">
-                                  Inscrição
-                                </button>
-                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="modeloAly" data-toggle="modal" data-target="#exampleModalCenter2">
+                                Inscrição
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalCenterTitle">Inscreva-se</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                        </button>
-                                      </div>
-                                      <div class="modal-body">
-                                      <!--Formulario começa aqui-->
-                                        <form class="px-4 py-3" method="POST" action="htdoc/cadastro.php"?">
-                                            <div class="form-group">
-                                                <h4 class="label1">Nome</h4>
-                                                <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
-                                                <h4 class="label1">Nome Social</h4>
-                                                <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
-                                              <h4 class="label1"> Endereço de Email</h4>
-                                              <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
-                                            </div>
-                                            <div class="form-group">
-                                              <h4 class="label1">Senha</h4>
-                                              <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
-                                            </div>
-                                            <div class="form-group">
-                                                <h4 class="label1">Escolaridade</h4>
-                                                <select name="escolaridade" id="escolaridade">
-                                                    <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
-                                                    <option value="Ensino Fundamental">Ensino Fundamental</option>
-                                                    <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
-                                                    <option value="Ensino Medio">Ensino Medio</option>
-                                                    <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
-                                                    <option value="Ensino Técnico">Ensino Técnico</option>
-                                                    <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
-                                                    <option value="Ensino Superior">Ensino Superior</option>
-                                                </select>
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
-                                                <h4 class="label1">Data de Nacimento</h4>
-                                                <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date">
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
-                                                <h4 class="label1">Endereço</h4>
-                                                <input name="endereco" class="form-control" placeholder="Endereço" type="text" required >
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
-                                                <h4 class="label1">Telefone</h4>
-                                                <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required >
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
-                                              <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                                <p class="label1">Lembre-se de mim</p>
-                                              </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-primar">Inscreva-se</button>
-                                            <button type="reset" class="btn btn-primar">Limpar</button>
-                                          </form>
-                                          
-                                        <!--termina aqui-->
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Inscreva-se</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--Formulario começa aqui-->
+                                            <form class="px-4 py-3" method="POST" action="htdoc/cadastro.php" ?">
+                                                <div class="form-group">
+                                                    <h4 class="label1">Nome</h4>
+                                                    <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <h4 class="label1">Nome Social</h4>
+                                                    <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <h4 class="label1"> Endereço de Email</h4>
+                                                    <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <h4 class="label1">Senha</h4>
+                                                    <input name="senha" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" required="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <h4 class="label1">Escolaridade</h4>
+                                                    <select name="escolaridade" id="escolaridade">
+                                                        <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                                                        <option value="Ensino Fundamental">Ensino Fundamental</option>
+                                                        <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                                                        <option value="Ensino Medio">Ensino Medio</option>
+                                                        <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+                                                        <option value="Ensino Técnico">Ensino Técnico</option>
+                                                        <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                                                        <option value="Ensino Superior">Ensino Superior</option>
+                                                    </select>
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <h4 class="label1">Data de Nacimento</h4>
+                                                    <input name="data_nacimento" class="form-control" placeholder="Data de nacimento" type="date">
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <h4 class="label1">Endereço</h4>
+                                                    <input name="endereco" class="form-control" placeholder="Endereço" type="text" required>
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <h4 class="label1">Telefone</h4>
+                                                    <input name="Telefone" class="form-control" placeholder="85999999999" type="tel" minlength="11" maxlength="11" required>
+                                                </div> <!-- form-group// -->
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                        <p class="label1">Lembre-se de mim</p>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primar">Inscreva-se</button>
+                                                <button type="reset" class="btn btn-primar">Limpar</button>
+                                            </form>
 
-                            
+                                            <!--termina aqui-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div><!-- .donate-btn -->
                     </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .top-header-bar -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .top-header-bar -->
 
-    <div class="nav-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="site-branding d-flex align-items-center">
-                        <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png"  width="180px" height="80px" alt="logo"></a>
-                    </div><!-- .site-branding -->
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png" width="180px" height="80px" alt="logo"></a>
+                        </div><!-- .site-branding -->
 
-                    <nav class="site-navigation d-flex justify-content-end align-items-center">
-                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="about.html">Sobre</a></li>
-                            <li><a href="cronograma.html">Cronograma</a></li>
-                            <li><a href="atracoes.html">Atrações</a></li>
-                            <li><a href="competicoes.html">Competições</a></li>
-                            <li class="current-menu-item"><a href="contact.html">Contato</a></li>
-                        </ul>
-                    </nav><!-- .site-navigation -->
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="index.html">Início</a></li>
+                                <li><a href="about.html">Sobre</a></li>
+                                <li><a href="cronograma.html">Cronograma</a></li>
+                                <li><a href="atracoes.html">Atrações</a></li>
+                                <li><a href="competicoes.html">Competições</a></li>
+                                <li class="current-menu-item"><a href="contact.html">Quem Somos?</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
 
-                    <div class="hamburger-menu d-lg-none">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div><!-- .hamburger-menu -->
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .nav-bar -->
-</header><!-- .site-header -->
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
 
     <div class="page-header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Contato</h1>
+                    <h1>Quem somos?</h1>
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
     </div><!-- .page-header -->
 
-    <div class="contact-page-wrap">
+    <div class="ajeitando1" class="featured-cause">
+        
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-5">
-                    <div class="entry-content">
-                        <h2>Entre em contato conosco</h2>
-
-                        <p>Suas ideias e sugestões são importantes para nós.<br>Se estiver com dúvidas se comunique com a gente. Responderemos o mais breve possível, você também pode relatar um problema ou usar as formas de contato abaixo para nos enviar sugestões e ideias.</p>
-                        <ul class="contact-info p-0">
-                            <li><i class="fa fa-phone"></i><span>+55 (85) 98844-4394</span></li>
-                            <li><i class="fa fa-envelope"></i><span>acon.ifce@gmail.com</span></li>
-                            <li><i class="fa fa-map-marker"></i><span>Av. Parque Central, 1315 - Distrito Industrial I, Maracanaú - CE</span></li>
-                        </ul>
-                    </div>
-                </div><!-- .col -->
-
-                <div class="col-12 col-lg-7">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Nome">
-                        <input type="email" placeholder="Email">
-                        <textarea rows="15" cols="6" placeholder="Mensagem"></textarea>
-
-                        <span >
-                            <input class="btn gradient-bg" type="submit" value="Enviar">
-                        </span>
-                    </form><!-- .contact-form -->
-
-                </div><!-- .col -->
-
                 <div class="col-12">
-                    <div class="contact-gmap">
+                    <div class="section-heading">
+                        <nav aria-label="...">
+                      
+                        </nav>
+                    </div><!-- .section-heading -->
+                </div><!-- .col -->
+            </div><!-- .row -->
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961.4391198047115!2d-38.62030058352432!3d-3.8702119887392965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c753962d9d47db%3A0x6880999804c0379a!2sIFCE+Campus+Maracana%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1559925359346!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                    </div>
-                </div>
+            <div class="row">
+
+
+                <div class="col-12 col-lg-6">
+                        <div><h2><b>Equipe de Desenvolvimento</b></h2></div>
+                </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
+    </div><!-- .featured-cause -->
+    
+       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="ajeitando" class="our-causes pt-0">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="mais imagens/ppjaron.jpeg" id="img_circular">
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0" id="nome"></br>Jaron Khepry </h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0"id="nome">⌘ Desenvolvedor BACK-END  </br>Tec. Informática</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+
+
+
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .col -->
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="#" alt="">
+
+                                        
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0"></p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+
+
+
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .col -->
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="mais imagens/ppalisson.jpeg" id="img_circular">
+
+                                       
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"id="nome"></br>Alisson Silva </h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0"id="nome">⌘ Desenvolvedor FRONT-END</br>Tec. Informática</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+
+
+
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .our-causes -->
+            </div>
+            <div class="carousel-item">
+                <!-- Segundo carrosel de gifts cards -->
+                <div class="ajeitando" class="our-causes pt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="mais imagens/ppdavi.jpeg" id="img_circular">
+
+                                        
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"id="nome"></br>Davi Freitas</h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0id="id="nome">⌘ Desenvolvedor FRONT-END </br>Tec. Informática</p>
+                                         
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+
+
+
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .col -->
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="#" alt="">
+
+                                        
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0"> </p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+
+
+
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .col -->
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="mais imagens/ppjoao.jpeg" id="img_circular">
+
+                                        
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"id="nome"></br>João Victor</h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0" id="nome">⌘ Desenvolvedor FRONT-END  </br>Ciencia da Computação</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+
+
+
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .our-causes -->
+
+                <!--Termina aqui o segundo carrosel de gifts cards-->
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+                                                <!--Segunda divisoria-->
+
+        <div class="featured-cause">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2 class="entry-title">31/08/2019</h2>
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Temas</th>
+                  <th scope="col">Horário</th>
+                  <th scope="col">sala/bloco</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mundo mario</td>
+                  <td>14:00h</td>
+                  <td>B3S5</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>harry potter</td>
+                  <td>15:00h</td>
+                  <td>B3S8</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Games</td>
+                  <td>16:00h</td>
+                  <td>B3S10</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 class="entry-title">01/09/2019</h2>
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Temas</th>
+                  <th scope="col">Horário</th>
+                  <th scope="col">sala/bloco</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mundo mario</td>
+                  <td>14:00h</td>
+                  <td>B3S5</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>harry potter</td>
+                  <td>15:00h</td>
+                  <td>B3S8</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Games</td>
+                  <td>16:00h</td>
+                  <td>B3S10</td>
+                </tr>
+              </tbody>
+            </table>
+                        
+                    </div><!-- .section-heading -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+
+            <div class="row">
+
+
+                <div class="col-12 col-lg-6">
+                        
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .featured-cause -->
 
     <footer class="site-footer">
         <div class="footer-widgets">
@@ -260,8 +517,8 @@
 
 
                             <ul class="d-flex flex-wrap align-items-center">
-                                
-                                
+
+
                                 <!--
                                     <li><a href="#"><i class="fa fa-pinterest-p"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -283,9 +540,9 @@
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="about.html">Sobre</a></li>
-                            <li><a href="cronograma.html">Cronograma</a></li>
-                            <li><a href="atracoes.html">Atrações</a></li>
-                            <li><a href="competicoes.html">Editais</a></li>
+                            <li><a href="causes.html">Cronograma</a></li>
+                            <li><a href="portfolio.html">Atrações</a></li>
+                            <li><a href="news.html">Editais</a></li>
                             <li><a href="contact.html">Contato</a></li>
                             <li><a href="login.html">Login</a></li>
                         </ul>
@@ -293,14 +550,14 @@
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <div class="foot-latest-news">
-                        
-                            
+
+
                         </div><!-- .foot-latest-news -->
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <div class="foot-contact">
-                            <h2>Contatos</h2>
+                            <h2>Contact</h2>
 
                             <ul>
                                 <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
@@ -319,10 +576,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-                            </script>  Equipe de Desenvolvimento ACON</p>
+                                document.write(new Date().getFullYear());
+                            </script> Equipe de Desenvolvimento ACON</p>
                     </div><!-- .col-12 -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -337,8 +595,10 @@
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
     <script type='text/javascript' src='js/jquery.barfiller.js'></script>
     <script type='text/javascript' src='js/custom.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

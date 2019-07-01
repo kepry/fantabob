@@ -968,7 +968,7 @@ ul.tabs-nav .tab-nav.active {
     margin-top: 28px;
     margin-bottom: 0;
     font-size: 14px;
-    color: #929191;
+    color: white;
 }
 
 .cause-wrap .fund-raised {
@@ -2220,7 +2220,7 @@ ul.tabs-nav .tab-nav.active {
 
 
 .ajeitando {
-    background-color: black;
+    background-color: rebeccapurple;
 }
 
 
@@ -2234,6 +2234,12 @@ ul.tabs-nav .tab-nav.active {
     
 }
 
+#img_circular {
+    border-radius: 200px;
+}
 
+#nome {
+    text-align: center;    
+}
 
 
