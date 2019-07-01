@@ -36,8 +36,8 @@
 
 		try {
 			 $this->pdo = new PDO("mysql:dbname=bancoacon;host=localhost","JaromAdmin","toor@toor");
-			 echo "conexão feita";
-		}
+			 
+			 }
 
 		catch (PDOException $e) {
 			echo "Erro".$e->getMessage();
@@ -66,7 +66,6 @@
 	}
 
 }
-
 
 	public function SetId($i){
 		$this->id = $i;
@@ -148,18 +147,55 @@
 				
 			//Método para atualizar
 		);
-	}
- }
-		public function delete(){
-    	$sql = "  DELETE FROM usuarios WHERE id = ?  ";
-    	$sql = $this->pdo->prepare($sql);
-    	$sql->execute(array(
-    			$this->id
 
-    	)
-    );
-		
+		}
+
 	}
+	public function delete(){
+
+		if(!empty($this->id)){
+			$sql = " DELETE FROM usuarios WHERE id = ?  ";
+    		$sql = $this->pdo->prepare($sql);
+    		$sql->execute(array(
+    				$this->id
+
+    	));
+
+    	
+    }		
+			    		
+		
+}
+	//método para excluir  o user
+
+	public function backup(){
+
+			$sql = "INSERT INTO backup (nome, email, senha, nome_social , endereco,escolaridade , data_nascimento,telefone) VALUES(?,?,?,?,?,?,?,?)";
+			$sql = $this->pdo->prepare($sql);
+			$sql->execute(array(
+				$this->nome,
+				$this->email,
+				$this->senha,
+				$this->nome_social,
+				$this->endereco,
+				$this->escolaridade,
+				$this->data_nacimento,
+				$this->telefone)
+				
+				
+			//Método para armazenar o user em outro banco para evitar perca de dados
+		);
+			if(!empty($this->id)){
+			$sql = " DELETE FROM usuarios WHERE id = ?  ";
+    		$sql = $this->pdo->prepare($sql);
+    		$sql->execute(array(
+    				$this->id
+
+    	));
+    }		
+}
+
+ 
 
 }
 
