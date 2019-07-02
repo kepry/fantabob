@@ -911,6 +911,7 @@ ul.tabs-nav .tab-nav.active {
 
 .cause-wrap {
     margin-top: 50px;
+
 }
 
 .featured-cause .cause-wrap {
@@ -1612,6 +1613,7 @@ ul.tabs-nav .tab-nav.active {
 
 .news-content .entry-header {
     margin-top: 34px;
+    background-color: #6c206e;
 }
 
 .news-content .entry-header .header-elements,
