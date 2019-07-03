@@ -2215,9 +2215,21 @@ ul.tabs-nav .tab-nav.active {
 
 
 
+.parallax1 {
+  /* The image used */
+  background: url('images/harrypotter2.jpg');
+
+  /* Full height */
+  height: 380px;
 
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
 
 
 
