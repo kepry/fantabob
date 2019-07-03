@@ -6,18 +6,20 @@ require_once "conexão.php";
 
 $conexao = new conexao();
 $crud = new usuario($_SESSION['id']);
+echo $_SESSION['id'];
 
-	$email = $_SESSION['email'];
-	
+    $email = $_SESSION['email'];
+    
 
     $sql = $conexao->query(" SELECT * FROM backup WHERE email = '$email'  ");
  //nesse trecho ele verifica se existe email no banco
        
         
         if($conexao->contador() == 'vazio' || $conexao->contador() == 0 ){
-   	
-        		$crud->backup();
-        		header("Location: logoff.php");
+    
+                $crud->backup();
+                //header("Location: logoff.php");
+                echo "backup";
 
         //utilizando esse método ele checa o numero de respostas dada pelo sql  se não existe igual ele recebe para seu retorno a string vazio e assim pode adicionar o novo parametro; 
 
@@ -25,14 +27,12 @@ $crud = new usuario($_SESSION['id']);
         
          else{
             
-         	$crud->delete();
-         	header("Location: logoff.php");
-
-
+            $crud->delete();
+            header("Location: logoff.php");
+            
         }
 
-
-	
+    
 
 
 ?>

@@ -24,8 +24,7 @@
         $telefone = $db->GetTelefone();
         $data_nacimento = $db->GetData();
         $email = $db->GetEmail();
-       $valor = false;
-
+       
 
 
 
@@ -240,7 +239,7 @@
         //Método para setar o novo valor e enviar para o crud onde vai ser salvo
 
           if(isset($_POST['delete']) && empty($_POST['delete']) == false ){
-                  header("Location: ../index.html");
+                  header("Location: ../htdoc/delete.php");
           }
 
 
