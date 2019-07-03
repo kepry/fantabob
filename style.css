@@ -2230,6 +2230,36 @@ ul.tabs-nav .tab-nav.active {
   background-size: cover;
 
 }
+.parallax2 {
+  /* The image used */
+  background: url('images/harrypotter.jpg');
+
+  /* Full height */
+  height: 450px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.parallax3 {
+  /* The image used */
+  background: url('images/gibiteca2.jpg');
+
+  /* Full height */
+  height: 450px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 
 
