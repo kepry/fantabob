@@ -750,7 +750,7 @@ ul.tabs-nav .tab-nav.active {
 .home-page-welcome {
     position: relative;
     padding: 96px 0;
-    background: url(images/heard.png.jfif) no-repeat center;
+    background: url(images/meteoro.jpg) no-repeat center;
     background-size: cover;
     z-index: 99;
 }
@@ -1159,7 +1159,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .about-page .page-header {
-    background:url(images/heard.png.jfif)no-repeat center;
+    background:url(images/meteoro.jpg)no-repeat center;
 
 }
 
@@ -1300,7 +1300,7 @@ ul.tabs-nav .tab-nav.active {
 # Causes
 --------------------------------------------------------------*/
 .causes-page .page-header {
-    background: url(images/estrela.jpg) no-repeat center;
+    background: url(images/meteoro.jpg) no-repeat center;
 }
 
 .causes-page .featured-cause {
@@ -1380,7 +1380,7 @@ ul.tabs-nav .tab-nav.active {
 # Single Cause
 --------------------------------------------------------------*/
 .single-cause .page-header {
-    background: url(images/estrela.jpg) no-repeat center;
+    background: url(images/meteoro.jpg) no-repeat center;
 }
 
 .single-cause .highlighted-cause {
@@ -1537,7 +1537,7 @@ ul.tabs-nav .tab-nav.active {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .page-header {
-    background: url(images/estrela.jpg) no-repeat center;
+    background: url(images/meteoro.jpg) no-repeat center;
 }
 
 .portfolio-wrap {
@@ -1590,7 +1590,7 @@ ul.tabs-nav .tab-nav.active {
 # News
 --------------------------------------------------------------*/
 .news-page .page-header {
-    background: url(images/estrela.jpg) no-repeat center;
+    background: url(images/meteoro.jpg) no-repeat center;
 }
 
 .news-wrap {
@@ -1892,7 +1892,7 @@ ul.tabs-nav .tab-nav.active {
 # Contact Page
 --------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url(images/heard.png.jfif)no-repeat center;
+    background: url(images/meteoro.jpg)no-repeat center;
 }
 
 .contact-page-wrap {
@@ -1953,7 +1953,7 @@ ul.tabs-nav .tab-nav.active {
 .contact-form {
     padding: 35px 20px 55px;
     margin-top: 96px;
-    background-image: url(images/heard.png.jfif);
+    background-image: url(images/meteoro.jpg)
 }
 
 .contact-form input[type="text"],
