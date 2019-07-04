@@ -91,11 +91,13 @@ form{
   width: 50%;
   margin: auto;
 }
-fieldset{
+/*para o formulario*/
+.fidborder{
   margin-top: 10px;
   border: 10px #6c206e solid;
   border-radius: 10px;
 }
+
 @media screen and (max-width:  450px) {
           form {width: 100%}
         }
