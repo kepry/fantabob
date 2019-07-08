@@ -441,7 +441,9 @@ a:hover, a:active {
 .btn.orange-border:hover,
 .btn.gradient-bg {
     border-color: #6c206e;
+    
 }
+
 /*
 # Accordion
 ----------------------------------*/
@@ -2243,7 +2245,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 
-.parallax1 {
+.parallax1 {/* PARALLAX LOL - COMPETIÇÕES */
     /* The image used */
     background-image: url("images/lol02.jpg");
   
@@ -2256,7 +2258,7 @@ ul.tabs-nav .tab-nav.active {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .parallax2 {
+  .parallax2 {/* PARALLAX CSGO - COMPETIÇÕES */
     /* The image used */
     background-image: url("images/csgo2.jpg");
   
@@ -2269,7 +2271,7 @@ ul.tabs-nav .tab-nav.active {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .parallax3 {
+  .parallax3 { /* PARALLAX COSPLAY - COMPETIÇÕES */
     /* The image used */
     background-image: url("images/cosplay2.jpg");
   
@@ -2282,7 +2284,7 @@ ul.tabs-nav .tab-nav.active {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .parallax4 {
+  .parallax4 { /* PARALLAX KPOP - COMPETIÇÕES */
     /* The image used */
     background-image: url("images/kpop1.JPG");
   
@@ -2295,12 +2297,39 @@ ul.tabs-nav .tab-nav.active {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .parallax5 {
+  .parallax5 {/* PARALLAX CSGO - COMPETIÇÕES */
     /* The image used */
     background-image: url("images/clash03.jpg");
   
     /* Set a specific height */
     min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax6 {  /* PARALLAX HARRY POTTER - SALAS TEMATICAS */
+    /* The image used */
+    background-image: url("images/harry-potter-1.jpg");
+  
+    /* Set a specific height */
+    min-height: 450px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax7 {  /* PARALLAX GIBITECA - SALAS TEMATICAS */
+    /* The image used */
+    background-image: url("images/gibiteca2.jpg");
+  
+    /* Set a specific height */
+    min-height: 450px; 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
