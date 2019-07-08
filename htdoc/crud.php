@@ -36,6 +36,7 @@
 
 		try {
 			 $this->pdo = new PDO("mysql:dbname=bancoacon;host=localhost","JaromAdmin","toor@toor");
+
 			 
 			 }
 
@@ -67,6 +68,9 @@
 
 }
 
+
+
+
 	public function SetId($i){
 		$this->id = $i;
 	}
@@ -94,6 +98,19 @@
 	}
 	public function SetTelefone($t){
 		$this->telefone = $t;
+	}
+
+	public function SetCpf($cpf){
+		$this->cpf = $cpf;
+	}
+	public function SetModalidade($modal){
+		$this->id_modalidade = $modal;
+	}
+	public function SetIdCapitao($capitao){
+		$this->id_capitao = $capitao;
+	}
+	public function SetNome_Equipe($equipe){
+		$this->nome_da_equipe = $equipe;
 	}
 
 	//Métodos de configurar;
@@ -124,6 +141,22 @@
 	public function GetNome_Social(){
 		return $this->nome_social;
 	}
+
+
+	public function GetCpf(){
+		return $this->cpf ;
+	}
+	public function GetModalidade(){
+		return $this->id_modalidade ;
+	}
+	public function GetIdCapitao(){
+		return $this->id_capitao; 
+	}
+	public function GetNome_Equipe(){
+		return $this->nome_da_equipe;
+	}
+
+
 	//Métodos para devolver dados
 
 
@@ -195,6 +228,77 @@
     	//método para excluir dado da tabela usuarios usando o where para endentificar o user 
     }		
 }
+	
+ 
+	public function CadastroEquipe(){
+
+			
+			
+			$sql = "INSERT INTO equipe (nome_da_equipe,id_modalidade, id_capitao, cpf) VALUES(?,?,?,?) ";
+			$sql = $this->pdo->prepare($sql);
+			$sql->execute(array(
+				$this->nome_da_equipe,
+				$this->id_modalidade,
+				$this->id_capitao,
+				$this->cpf,
+				
+						));
+
+			
+	}
+		
+
+	public function validaCPF($cpf) {
+
+	// Verifica se um número foi informado
+	if(empty($cpf)) {
+		return false;
+	}
+
+	// Elimina possivel mascara
+	$cpf = preg_replace("/[^0-9]/", "", $cpf);
+	$cpf = str_pad($cpf, 11, '0', STR_PAD_LEFT);
+	
+	// Verifica se o numero de digitos informados é igual a 11 
+	if (strlen($cpf) != 11) {
+		return false;
+	}
+	// Verifica se nenhuma das sequências invalidas abaixo 
+	// foi digitada. Caso afirmativo, retorna falso
+	else if ($cpf == '00000000000' || 
+		$cpf == '11111111111' || 
+		$cpf == '22222222222' || 
+		$cpf == '33333333333' || 
+		$cpf == '44444444444' || 
+		$cpf == '55555555555' || 
+		$cpf == '66666666666' || 
+		$cpf == '77777777777' || 
+		$cpf == '88888888888' || 
+		$cpf == '99999999999') {
+		return false;
+	 // Calcula os digitos verificadores para verificar se o
+	 // CPF é válido
+	 } else {   
+		
+		for ($t = 9; $t < 11; $t++) {
+			
+			for ($d = 0, $c = 0; $c < $t; $c++) {
+				$d += $cpf{$c} * (($t + 1) - $c);
+			}
+			$d = ((10 * $d) % 11) % 10;
+			if ($cpf{$c} != $d) {
+				return false;
+			}
+		}
+
+		return true;
+		echo "sucesso";
+	}
+}
+
+
+
+
 
  
 
