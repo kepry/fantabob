@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<?php
+
+        require_once "htdoc/conexão.php";
+
+        $con = new conexao();
+
+        $query = $con->query("SELECT * FROM usuarios ");
+        $retorno = $con->contadorAll();
+        $cont = count($retorno);
+        echo $cont;
+       
+
+
+
+
+
+
+?>
+
         <link rel="icon" href="images/icone.ico" type="image/x-icon" />
     <title>ACON - Entre Mundos!</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -230,183 +250,58 @@
         height: 100%;
         z-index: 1;
       }
+
     </style>
-      <span class="tw-heart-box">
-        <input type="checkbox" name="name" value="">
-        <span class="tw-heart"></span>
-      </span>
-
-    <!--=============teste de card manuasi-->
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  margin-top:20px;
-}
-</style>
-
-
-<h2>Responsive Column Cards</h2>
-<p>Resize the browser window to see the effect.</p>
-
-<div class="row">
-  <div class="column"> 
-    <div class="card">
-    <img src="https://images7.alphacoders.com/700/thumb-1920-700047.jpg" alt="Smiley face" height="100%" width="100%">
-      <h3>Card 1</h3>
-      <p>Some text</p>
-      <p>
-        <span class="tw-heart-box">
-          <input type="checkbox" name="name" value="">
-        <span class="tw-heart"></span>
-      </p>
+     
       
-      </span>
+
+   <?php
+
+
+       for($i = 1; $i < $cont ; $i++){
+        $j = $i - 1;
+
+      echo (" 
+      <div style=' float: left ; height:180px;display: flex; top: 15px '>
+        <div class='card' style='width: 18rem;'>
+             <img class='card-img-top' style='width 100px' src='images/cosplay2.jpg' alt='Card image cap'>
+              <div class='card-body'>
+                <h5 class='card-title'>".$retorno[$j][1]."</h5>
+                <p class='card-tex'>".$retorno[$j][2]."</p>
+               <div> <span class='tw-heart-box'>
+                <input type='checkbox' name='name' value=".$j.">
+                <span class='tw-heart'></span>
+                </div>
+              </span>
+            </div>
+        </div>
     </div>
-  </div>
+      <br>
+
+          
 
 
-  
-</div>
+          ");
+      
+       }
 
-    <!--=============teste de card manuasi-->
+
+
+
+
+
+
+
+
+
+   ?>
+      <div><br></div>
+
 
     <!-- =================== /Corpo aqui =========================== -->
     
 
-    <footer class="site-footer">
-        <div class="footer-widgets">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="foot-about">
-                            <h2><a class="foot-logo" href="index.html"><img src="images/LogoEntreMundos.png" height="150" alt=""></a></h2>
-                            <h2><a class="foot-logo" href="index.html"><img src="images/if02.png" height="100" alt=""></a></h2>
-
-
-                            <ul class="d-flex flex-wrap align-items-center">
-                                
-                                
-                                <!--
-                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                -->
-                                <li><a target="_back" href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
-                                <li><a target="_back" href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
-                                <li><a target="_back" href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
-
-                            </ul>
-                        </div><!-- .foot-about -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <h2>Páginas</h2>
-
-                        <ul>
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="about.html">Sobre</a></li>
-                            <li><a href="cronograma.html">Cronograma</a></li>
-                            <li><a href="atracoes.html">Atrações</a></li>
-                            <li><a href="competicoes.html">Competições</a></li>
-                            <li><a href="contact.html">Contato</a></li>
-                            <li><a href="login.html">Login</a></li>
-                        </ul>
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-latest-news">
-                           <!-- <h2>Latest News</h2>
-
-                            <ul>
-                                <li>
-                                    <h3><a href="#">A new cause to help</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="#">We love to help people</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
-                                </li>
-
-                                <li>
-                                    <h3><a href="#">The new ideas for helping</a></h3>
-                                    <div class="posted-date">MArch 12, 2018</div>
-                                </li>
-                            </ul>-->
-                        </div><!-- .foot-latest-news -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-contact">
-                            <h2>Contact</h2>
-
-                            <ul>
-                                <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
-                                <li><i class="fa fa-envelope"></i><span>acon.ifce@gmail.com</span></li>
-                                <li><i class="fa fa-map-marker"></i><span> IFCE Maracanaú - Av. Parque Central - Distrito Industrial, Maracanaú - CE, 61919-140</span></li>
-                            </ul>
-                        </div><!-- .foot-contact -->
-
-
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .footer-widgets -->
-
-        <div class="footer-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="m-0">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
-                            </script> Equipe de Desenvolvimento ACON</p>
-                    </div><!-- .col-12 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .footer-bar -->
-    </footer><!-- .site-footer -->
+ 
 
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>

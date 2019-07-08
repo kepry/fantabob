@@ -230,24 +230,7 @@
 }
 	
  
-	public function CadastroEquipe(){
-
-			
-			
-			$sql = "INSERT INTO equipe (nome_da_equipe,id_modalidade, id_capitao, cpf) VALUES(?,?,?,?) ";
-			$sql = $this->pdo->prepare($sql);
-			$sql->execute(array(
-				$this->nome_da_equipe,
-				$this->id_modalidade,
-				$this->id_capitao,
-				$this->cpf,
-				
-						));
-
-			
-	}
-		
-
+	
 	public function validaCPF($cpf) {
 
 	// Verifica se um número foi informado

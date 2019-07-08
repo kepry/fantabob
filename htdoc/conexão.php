@@ -4,6 +4,7 @@
 		private $array;
 		private $numRows;
 		private $query;
+		private $retornoAll;
 
 		public function __construct(){
 
@@ -16,7 +17,7 @@
 			$query = $this->dsn->query($sql);
 			$this->numRows = $query->rowCount();
 			$this->array = $query->fetch();
-
+			$this->retornoAll = $query->fetchAll();
 
 			
 			
@@ -39,6 +40,12 @@
 				}
 
 			}
+
+	public function retornoAll(){
+
+		return $this->retornoAll;
+
+	}
 }
 
 
