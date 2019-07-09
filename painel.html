@@ -4,6 +4,7 @@
         <link rel="icon" href="images/icone.ico" type="image/x-icon" />
     <title>ACON - Entre Mundos!</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +27,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="single-page portfolio">
+<body>
     <header class="site-header">
         <div class="top-header-bar">
             <div class="container">
@@ -40,6 +41,7 @@
                             <p>Contato: <span>+55 (85) 98844-4394 </span></p>
                         </div><!-- .header-bar-text -->
                     </div><!-- .col -->
+
 
                     <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                        <div class="donate-btn">
@@ -109,10 +111,6 @@
                                                 <input name="nome" class="form-control" placeholder="Nome Completo" type="text" required autofocus>
                                             </div> <!-- form-group// -->
                                             <div class="form-group">
-                                                <h4 class="label1">Nome Social</h4>
-                                                <input name="nome_social" class="form-control" placeholder="Nome Social" type="text" id="nome_social">
-                                            </div> <!-- form-group// -->
-                                            <div class="form-group">
                                               <h4 class="label1"> Endereço de Email</h4>
                                               <input name="email" type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" required="">
                                             </div>
@@ -173,18 +171,16 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
                         <div class="site-branding d-flex align-items-center">
-                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png"  width="180px" height="80px" alt="logo"></a>
-                            
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/acon.png"  width="180px" height="80px" alt="logo"></a>
                         </div><!-- .site-branding -->
 
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
                             <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li><a href="index.html">Início</a></li>
-                                <li><a href="about.html">Sobre</a></li>
-                                <li><a href="cronograma.html">Cronograma</a></li>
-                                <li class="current-menu-item"><a href="atracoes.html">Atrações</a></li>
-                                <li><a href="competicoes.html">Competições</a></li>
-                                <li><a href="contact.html">Quem Somos?</a></li>
+                                <li class="current-menu-item"><a href="painel.html">Início</a></li>
+                                <li><a href="#">minha conta</a></li>
+                                <li><a href="#">favorito</a></li>
+                                <li><a href="#">Cadastro de equipe</a></li>
+                                <li><a href="#">Compra de ingressos</a>
                             </ul>
                         </nav><!-- .site-navigation -->
 
@@ -200,189 +196,120 @@
         </div><!-- .nav-bar -->
     </header><!-- .site-header -->
 
-    <div class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Principais Atrações</h1>
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .page-header -->
+    <!-- =================== Corpo aqui =========================== -->
+    <style type="text/css">
+      .tw-heart-box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
 
-    <div class="portfolio-wrap">
-        <div class="container">
-            <div class="row portfolio-container">
-                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="https://www.instagram.com/vmzoficial/"><img src="images/vmzCantor.jpg" alt=""></a>
+      .tw-heart {
+        background: url(http://i.imgur.com/zw8ahUb.png) no-repeat 0 0;
+        display: inline-block;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
 
-                        <h3 class="entry-title"><a href="#">Cantor VMZ</a></h3>
-                        <h4>01/09 - Domingo</h4>
-                    </div>
-                </div>
+      [type="checkbox"]:checked + .tw-heart {
+        transition: background .8s steps(28);
+        background-position: -2800px 0;
+      }
 
-                <div class="col-12 col-md-6 col-lg-3 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/b.jpg" alt=""></a>
+      [type="checkbox"] {
+        opacity: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    </style>
+      <span class="tw-heart-box">
+        <input type="checkbox" name="name" value="">
+        <span class="tw-heart"></span>
+      </span>
 
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
+    <!--=============teste de card manuasi-->
+<style>
+* {
+  box-sizing: border-box;
+}
 
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="https://www.instagram.com/matheusallblue/"><img src="images/matheusYoutuber.jpg" alt=""></a>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-                        <h3 class="entry-title"><a href="#">Matheus All Blue</a></h3>
-                        <h4>31/08 e 01/09 - Sábado e Domingo</h4>
-                    </div>
-                </div>
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
 
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/hevila.jpg" alt=""></a>
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
 
-                        <h3 class="entry-title"><a href="#">Hevila Mendes</a></h3>
-                        <h4>31/08 e 01/09 - Sabádo e Domingo</h4>
-                    </div>
-                </div>
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-                <div class="col-12 col-md-6 col-lg-3 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/e.jpg" alt=""></a>
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top:20px;
+}
+</style>
 
-                <div class="col-12 col-md-6 col-lg-4 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/f.jpg" alt=""></a>
 
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
 
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/g.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/h.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AI</a>D</h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/i.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/a.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/b.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/c.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AID</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-5 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/d.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AID</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/e.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 mt-48 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/f.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/g.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-6 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/h.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Water for Children AI</a>D</h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3 mt-72 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="#"><img src="images/i.jpg" alt=""></a>
-
-                        <h3 class="entry-title"><a href="#">Toys for Children Campaign</a></h3>
-                        <h4>2018 Causes</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center mt-72">
-                    <a href="cronograma.html" class="btn gradient-bg">Ver Cronograma</a>
-                </div>
-            </div>
-        </div>
+<div class="row">
+  <div class="column"> 
+    <div class="card">
+    <img src="https://images7.alphacoders.com/700/thumb-1920-700047.jpg" alt="Smiley face" height="100%" width="100%">
+      <h3>Card 1</h3>
+      <p>Some text</p>
+      <p>
+        <span class="tw-heart-box">
+          <input type="checkbox" name="name" value="">
+        <span class="tw-heart"></span>
+      </p>
+      
+      </span>
     </div>
+  </div>
+
+
+  
+</div>
+
+    <!--=============teste de card manuasi-->
+
+    <!-- =================== /Corpo aqui =========================== -->
+    
 
     <footer class="site-footer">
         <div class="footer-widgets">
@@ -391,14 +318,22 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="foot-about">
                             <h2><a class="foot-logo" href="index.html"><img src="images/LogoEntreMundos.png" height="150" alt=""></a></h2>
-                            <h2><a class="foot-logo" target="novaAba6" href="https://ifce.edu.br/maracanau"><img src="images/LOGOdoIF.png" height="130" alt=""></a></h2>
+                            <h2><a class="foot-logo" href="index.html"><img src="images/if02.png" height="100" alt=""></a></h2>
 
-                           
 
                             <ul class="d-flex flex-wrap align-items-center">
-                                <li><a href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
-                                <li><a href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
+                                
+                                
+                                <!--
+                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                -->
+                                <li><a target="_back" href="https://www.facebook.com/ACON.IFCE/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a target="_back" href="https://www.youtube.com/channel/UCIkmENGKFNKRz18T2_iNEtg"><i class="fa fa-youtube"></i></a></li>
+                                <li><a target="_back" href="https://www.instagram.com/acon_ifce/"><i class="fa fa-instagram"></i></a></li>
 
                             </ul>
                         </div><!-- .foot-about -->
@@ -420,13 +355,30 @@
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <div class="foot-latest-news">
-                        
+                           <!-- <h2>Latest News</h2>
+
+                            <ul>
+                                <li>
+                                    <h3><a href="#">A new cause to help</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#">We love to help people</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+
+                                <li>
+                                    <h3><a href="#">The new ideas for helping</a></h3>
+                                    <div class="posted-date">MArch 12, 2018</div>
+                                </li>
+                            </ul>-->
                         </div><!-- .foot-latest-news -->
                     </div><!-- .col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                         <div class="foot-contact">
-                            <h2>Contatos</h2>
+                            <h2>Contact</h2>
 
                             <ul>
                                 <li><i class="fa fa-phone"></i><span>(85) 98844-4394</span></li>
@@ -435,8 +387,7 @@
                             </ul>
                         </div><!-- .foot-contact -->
 
-                      
-                        </div><!-- .search-widget -->
+
                     </div><!-- .col -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -446,11 +397,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="m-0">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
                             </script> Equipe de Desenvolvimento ACON</p>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div><!-- .col-12 -->
                 </div><!-- .row -->
             </div><!-- .container -->
@@ -468,7 +419,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
 </html>
-
