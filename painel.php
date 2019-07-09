@@ -4,7 +4,7 @@ session_start();
 require_once "htdoc/conexão.php";
   $con = new conexao();
 
-  $query = $con->query("SELECT * FROM usuarios");
+  $query = $con->query("SELECT * FROM cronograma");
   $retorno = $con->retornoAll();
   $cont = count($retorno);
   echo $cont;
@@ -244,12 +244,8 @@ require_once "htdoc/conexão.php";
         height: 100%;
         z-index: 1;
       }
-    </style>
-      <span class="tw-heart-box">
-        <input type="checkbox" name="name" value="">
-        <span class="tw-heart"></span>
-      </span>
-
+   
+</style>
     <!--=============teste de card manuasi-->
 <style>
 * {
@@ -299,9 +295,9 @@ body {
 </style>
 
 
-<h2>Responsive Column Cards</h2>
-<p>Resize the browser window to see the effect.</p>
-
+<h2>Cronograma</h2>
+<h6 style="color:red">Favorite para destacar o seu favorito  </h6>
+<form type= method="POST">
 <div class="row">
  <?php
 
@@ -310,35 +306,49 @@ body {
 
 
       echo ('
+
        <div class="column"> 
         <div class="card">
-          <img src="images/01.acon.jpg" alt="Smiley face" height="35%" width="100%">
+          <img src="temaimg/'.$retorno[$j][6].'"  height="20%" width="100%">
             <h3>'.$retorno[$j][1].'</h3>
             <p>'.$retorno[$j][2].'</p>
             <p>'.$retorno[$j][3].'<p/>
-               <p>'.$retorno[$j][4].'<p/>
+              <p>'.$retorno[$j][4].'<p/>
+               <p>'.$retorno[$j][5].'<p/>
             <p>
-          <span class="tw-heart-box">
-          <input type="checkbox" name="name" value="'.$i.'">
-        <span class="tw-heart"></span>
-        </p>
+             <span class="tw-heart-box">
+               <input type="checkbox"  name="nome" value="'.$i.'">
+             <span class="tw-heart"></span>
+            </p>
       
-      </span>
-    </div>
-  </div>
+        </span>
+      </div>
+   </div>
  
           ');
+    }
       
-       }
-
 
    ?>
+
    </div>
+</form>
    <p style="margin-bottom: 10px"></p>
 
   
 
+   <?php
+  
 
+     if(isset($_POST['nome'])){
+      $checkbox = $_POST[$i] ? "marcado (true)" : "desmarcado (false)"; 
+        echo $checkbox;
+
+       }
+      
+
+
+?>
     <!--=============teste de card manuasi-->
 
     <!-- =================== /Corpo aqui =========================== -->
