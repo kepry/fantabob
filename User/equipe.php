@@ -11,6 +11,17 @@
             header("location: ../index.html");
             
         }
+        
+            require_once "../htdoc/crud.php";
+
+            $crud = new Usuario($_SESSION['id']);
+   
+
+            $nomeUser = $crud->GetNome();
+            
+
+
+
 
       ?>
 
@@ -54,22 +65,22 @@
 
       </header>
 
-      <form method="POST">
+      <form method="POST" >
         <fieldset>
           <legend>Cadastro da Equipe</legend>
           <p style="color: red;">OBS:preencha so se for participar das competicoes olhe os editais no site antes de cadastra</p>
 
           <div class="form-group">
                                     <label for="nome">Nome da equipe</label><br>
-                                    <input name="nome" class="form-control" placeholder="Team Name" type="text" id="nome">
+                                    <input name="nome_de_equipe" class="form-control" placeholder="Team Name" type="text" id="nome_de_equipe">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="capitao">Capitão</label><br> 
-                                    <input name="nome_social" class="form-control" placeholder="referenciado pela id" type="text" id="capitao" disabled=""> 
+                                    <input name="capitao" class="form-control" placeholder="<?php echo $nomeUser;?>" type="text" id="capitao" disabled=""> 
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="cpf">CPF</label> <br>
-                                    <input name="email" class="form-control" placeholder="CPF" type="text" id="cpf">
+                                    <input name="cpf" class="form-control" placeholder="CPF" type="text" id="cpf">
                                 </div> <!-- form-group// -->
                                 <div class="form-group">
                                     <label for="senha">Senha</label> <br>
@@ -77,16 +88,16 @@
                                 </div> <!-- form-group// -->    
                                 <div class="form-group">
                                     <label for="escolaridade">Modalidade</label><br>
-                                    <select name="escolaridade" id="escolaridade">
-                                        <option value="Ensino Fundamental Incompleto">LOL</option>
-                                        <option value="Ensino Fundamental">CS</option>
-                                        <option value="Ensino Medio Incompleto">KPOP</option>
-                                        <option value="Ensino Medio">mobile</option>
-                                        <option value="Ensino Técnico Incompleto">sei la</option>
+                                    <select name="modalidade" id="modalidade">
+                                        <option value="1">Cs</option>
+                                        <option value="2">Lol</option>
+                                        <option value="3">cosplay</option>
+                                        <option value="4">k-pop</option>
+                                        <option value="5">clash</option>
                                     </select>
                                 </div> <!-- form-group// -->                            
                                 
-                                            <button type="submit" class="btn btn-outline-dark">Cadastra equipe</button>       
+                              <button type="submit" class="btn btn-outline-dark">Cadastra equipe</button>       
                                                   
 
                                             
@@ -95,10 +106,50 @@
                                           
       </form>
 
-      <hr>
+      
+       <?php
+  
+  require_once "../htdoc/conexão.php";
+ 
+
+  $con = new conexao();
+
+  if(isset($_POST['cpf'])){
+       $consulta = $crud->validaCPF($_POST['cpf']);
+
+    
+    if($consulta == true){
+      if (isset($_POST['nome_de_equipe']) && empty($_POST['nome_de_equipe']) == false) 
+        if (isset($_POST['senha']) && empty($_POST['senha']) == false) 
+            if(isset($_POST['cpf']) && empty($_POST['cpf']) == false){
+
+              $nome_de_equipe = addslashes($_POST['nome_de_equipe']);
+              $senha = md5(addslashes($_POST['senha']));
+              $cpf  = addslashes($_POST['cpf']);
+              $modalidade = $_POST['modalidade'];
+              $id = $_SESSION['id'];
+             
+              $sql = $con->query("INSERT INTO equipe(nome_da_equipe,id_capitao,cpf, id_modalidade) VALUES ('$nome_de_equipe','$id','$cpf','$modalidade')");
+                
+                       
+           }
+        }
+      }
+    else{
+
+      return false;
+
+    }
+ 
+
+?>
 
 
-      <form method="POST">
+
+
+
+
+      <form method="POST"  >
         <fieldset>
           <legend>Cadastro de membros</legend>
           <select>
@@ -144,10 +195,7 @@
                                                                                              
                                           
       </form>
-
-
-
-
+ 
 
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

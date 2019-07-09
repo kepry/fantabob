@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+require_once "htdoc/conexão.php";
+  $con = new conexao();
+
+  $query = $con->query("SELECT * FROM cronograma");
+  $retorno = $con->retornoAll();
+  $cont = count($retorno);
+  echo $cont;
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -230,12 +244,8 @@
         height: 100%;
         z-index: 1;
       }
-    </style>
-      <span class="tw-heart-box">
-        <input type="checkbox" name="name" value="">
-        <span class="tw-heart"></span>
-      </span>
-
+   
+</style>
     <!--=============teste de card manuasi-->
 <style>
 * {
@@ -274,6 +284,8 @@ body {
 
 /* Style the counter cards */
 .card {
+  height: auto;
+  width: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
@@ -283,29 +295,60 @@ body {
 </style>
 
 
-<h2>Responsive Column Cards</h2>
-<p>Resize the browser window to see the effect.</p>
-
+<h2>Cronograma</h2>
+<h6 style="color:red">Favorite para destacar o seu favorito  </h6>
+<form type= method="POST">
 <div class="row">
-  <div class="column"> 
-    <div class="card">
-    <img src="https://images7.alphacoders.com/700/thumb-1920-700047.jpg" alt="Smiley face" height="100%" width="100%">
-      <h3>Card 1</h3>
-      <p>Some text</p>
-      <p>
-        <span class="tw-heart-box">
-          <input type="checkbox" name="name" value="">
-        <span class="tw-heart"></span>
-      </p>
-      
-      </span>
-    </div>
-  </div>
+ <?php
 
+      for($i = 1; $i < $cont+1 ; $i++){
+        $j = $i - 1;
+
+
+      echo ('
+
+       <div class="column"> 
+        <div class="card">
+          <img src="temaimg/'.$retorno[$j][6].'"  height="20%" width="100%">
+            <h3>'.$retorno[$j][1].'</h3>
+            <p>'.$retorno[$j][2].'</p>
+            <p>'.$retorno[$j][3].'<p/>
+              <p>'.$retorno[$j][4].'<p/>
+               <p>'.$retorno[$j][5].'<p/>
+            <p>
+             <span class="tw-heart-box">
+               <input type="checkbox"  name="nome" value="'.$i.'">
+             <span class="tw-heart"></span>
+            </p>
+      
+        </span>
+      </div>
+   </div>
+ 
+          ');
+    }
+      
+
+   ?>
+
+   </div>
+</form>
+   <p style="margin-bottom: 10px"></p>
 
   
-</div>
 
+   <?php
+  
+
+     if(isset($_POST['nome'])){
+      $checkbox = $_POST[$i] ? "marcado (true)" : "desmarcado (false)"; 
+        echo $checkbox;
+
+       }
+      
+
+
+?>
     <!--=============teste de card manuasi-->
 
     <!-- =================== /Corpo aqui =========================== -->
