@@ -15,7 +15,7 @@
 		public function query($sql){
 
 			$query = $this->dsn->query($sql);
-			$this->numRows = $query->rowCount();
+			$this->numRows = $query->rowcount();
 			$this->array = $query->fetch();
 			$this->retornoAll = $query->fetchAll();
 
