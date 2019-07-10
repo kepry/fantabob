@@ -10,7 +10,9 @@ body {
 img {
     vertical-align: baseline;
 }
-
+.white {
+    color:white;
+}
 .btn.btn.gradient-bg.mr-2{
     color: #fff;
 }
@@ -22,11 +24,11 @@ a {
 }
 
 a:visited {
-    color: #757686;
+    color: rgb(80, 25, 72);
 }
 
 a:hover, a:focus, a:active {
-    color: #262626;
+    color: white;
 }
 
 a:focus {
@@ -2340,4 +2342,24 @@ ul.tabs-nav .tab-nav.active {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .parallax8 {  /* PARALLAX GIBITECA - SALAS TEMATICAS */
+    /* The image used */
+    background-image: url("images/swordplay.jpg");
+  
+    /* Set a specific height */
+    min-height: 450px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
+ .paracomp {
+     color: rgb(85, 82, 82);
+ }
+ .titulo {
+     color:rebeccapurple;
+    text-align: center;
+    }
