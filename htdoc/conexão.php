@@ -11,6 +11,11 @@
 			$this->dsn = new PDO("mysql:dbname=bancoacon;host=localhost","JaromAdmin","toor@toor");
 
 		}
+		public function query2($sql){
+
+			$query = $this->dsn->query($sql);
+			
+		}
 
 		public function query($sql){
 
