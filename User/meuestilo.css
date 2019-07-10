@@ -73,6 +73,7 @@ body {
           transition: margin-left .5s;
           padding: 16px;
           float: left;
+          color: white;
         }
 
         @media screen and (max-height: 450px) {
@@ -124,6 +125,26 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.equipe {
+color: rgb(255, 187, 0); 
+text-align: left;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 80px;
+}
+
 
 /*=========================== paralax=====================*/
 
+.parallax01 {
+     /* The image used */
+     background-image: url("Temas/backgroundGamer.jpg");
+  
+     /* Set a specific height */
+     min-height: 300px; 
+   
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
