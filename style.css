@@ -10,7 +10,9 @@ body {
 img {
     vertical-align: baseline;
 }
-
+.white {
+    color:white;
+}
 .btn.btn.gradient-bg.mr-2{
     color: #fff;
 }
