@@ -293,7 +293,7 @@ body {
       <h3>Card 1</h3>
       <p>Some text</p>
       <p>
-        <span class="tw-heart-box">
+        <span class="tw-heart-box" onclick="avalia()">
           <input type="checkbox" name="name" value="">
         <span class="tw-heart"></span>
       </p>
@@ -407,7 +407,11 @@ body {
             </div><!-- .container -->
         </div><!-- .footer-bar -->
     </footer><!-- .site-footer -->
-
+    <script>
+      function avalia() {
+        alert("Clicou!");
+      }
+    </script>
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
