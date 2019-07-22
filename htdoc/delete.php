@@ -6,7 +6,7 @@ require_once "conexão.php";
 
 $conexao = new conexao();
 $crud = new usuario($_SESSION['id']);
-echo $_SESSION['id'];
+
 
     $email = $_SESSION['email'];
     
@@ -19,7 +19,7 @@ echo $_SESSION['id'];
     
                 $crud->backup();
                 //header("Location: logoff.php");
-                echo "backup";
+                 header("Location: logoff.php");
 
         //utilizando esse método ele checa o numero de respostas dada pelo sql  se não existe igual ele recebe para seu retorno a string vazio e assim pode adicionar o novo parametro; 
 

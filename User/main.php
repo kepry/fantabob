@@ -20,7 +20,7 @@
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <img src="../images/ACON(1).png" width="150px" height="150px" style="border-radius: 100px; border: solid 1px gray;" >
-          <a href="main.html">Inicio</a>
+          <a href="main.php">Inicio</a>
           <a href="perfil.php">Conta</a>
           <a href="Equipe.php">Equipe</a>
           <a href="cronograma.php">Cronograma</a>

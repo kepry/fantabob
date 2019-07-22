@@ -203,7 +203,7 @@
 
 	public function backup(){
 
-			$sql = "INSERT INTO backup (nome, email, senha, nome_social , endereco,escolaridade , data_nascimento,telefone) VALUES(?,?,?,?,?,?,?,?)";
+			$sql = "INSERT INTO backup (nome, email, senha, nome_social , endereco,escolaridade , data_nacimento,telefone) VALUES(?,?,?,?,?,?,?,?)";
 			$sql = $this->pdo->prepare($sql);
 			$sql->execute(array(
 				$this->nome,
@@ -218,13 +218,14 @@
 				
 			//Método para armazenar o user em outro banco para evitar perca de dados
 		);
-			if(!empty($this->id)){
+			if(isset($this->id)){
 			$sql = " DELETE FROM usuarios WHERE id = ?  ";
     		$sql = $this->pdo->prepare($sql);
     		$sql->execute(array(
     				$this->id
 
     	));
+    		 header("Location: logoff.php");
     	//método para excluir dado da tabela usuarios usando o where para endentificar o user 
     }		
 }

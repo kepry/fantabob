@@ -34,7 +34,8 @@ if (isset($_POST['email']) && empty($_POST['email']) == false)
 
 			if($emailCompare == $email && $senhaCompare === $senha){
 				$_SESSION['id'] = $dado['id'];
-				header("Location: ../user/perfil.php");
+				$_SESSION['email'] = $emailCompare;
+				header("Location: ../user/main.php");
 				$log = "Logou".getMessage();
 			//método de comparaçãop de dados
 			}
