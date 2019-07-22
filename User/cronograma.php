@@ -164,9 +164,10 @@ body {
               <p>'.$retorno[$j][4].'<p/>
                <p>'.$retorno[$j][5].'<p/>
             <p>
-             <span class="tw-heart-box">
+             <!--<span class="tw-heart-box">
                <input type="checkbox"  name="nome" value="'.$i.'">
-             <span class="tw-heart"></span>
+             <span class="tw-heart"></span>-->
+            <input style="border-radius: 100px;" type="submit" value="favorite">
             </p>
       
         </span>
