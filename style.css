@@ -2363,3 +2363,12 @@ ul.tabs-nav .tab-nav.active {
      color:rebeccapurple;
     text-align: center;
     }
+
+.ajustandoimagem {
+    position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
